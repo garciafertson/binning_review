@@ -5,7 +5,7 @@
 \usepackage{a4wide}
 \bibliographystyle{apacite}
 
-\title{Metagenomic Pipelines - the State of the Art}
+\title{Metagenomic Binning Pipelines - the State of the Art}
 \author{Theo Portlock}
 \begin{document}
 \maketitle
@@ -18,15 +18,45 @@ As sequencing costs have dropped at a rate above 'Moore's law', bigger data sets
 Oweing to the democritization of open source software...
 The following article reviews the ...
 
-
-\section{Metagenomic analysis}
+\section{Background}
 \begin{itemize}
+	\item \emph{Graphical summary for abstractj}
+	\item \emph{Variables to concider - viral, environmental, gut, long/short reading, computational,lab resourses etc - deep coverage, how did you recover the sequences, oxford nanopore vs illumina, shotgun vs 16s, number of samples? data preparation before binning, gene orientation, webserver vs local vs supercomuter, competency with the linux environment? sequence coverage, methylation signatures}
 	\item \emph{General introduction to metagenomics history }
 	\item \emph{increase in popularity of the field of metagenomics}
 	\item \emph{Maybe some important discoveries found as a result of metagenomic analysis}
+	\item \emph{The key programs that constitute metagenomic pipelines}
+	\item \emph{Maybe some benchmarking? Not sure}
+	\item \emph{Section introduces the most popular pipelines}
+	\item \emph{Features that distinguish these pipelines}
+	\item \emph{Some guidelines for chosing the correct pipeline appropriate for a given study}
 \end{itemize}
 Compared to amplicon, shotgun metagenome can provide functional gene profiles directly and reach a much higher resolution of taxonomic annotation.
 However, due to the large amount of data, the fact that most software is only available for Linux systems, and the large amount of computing resources are needed to perform analysis...
+The steps involved in metagenomic analysis
+Quality Control, filtering, and trimming
+A review of the efficiency of quality control algorythms can be found here \cite{zhou2014assessment}.
+Trimming is to remove adapters, primers, and over-represented sequences, and to trim poor quality basepairs
+Sequence alignment - Bowtie2, Tophat2, Hisat2 are used to map reads against a database
+Classifying taxonomy and Annotation - Binning
+Assembly
+Functional analyses
+Visualization
+Binning pipelines: Kaiju, Kraken2, Braken, mOTU, fetchMG, MetaPhIAn Centrifuge, METEOR, MetaBAT
+pipelines are chosen based on a number of factors
+Resource management
+Tradeoff between number of CPU's, memory, and time are important conciderations.
+Depends on the resources you have available and the required accuracy.
+Galaxy
+EBI Metagenomics (MGnify) has doubled the number of publicly available anaysed datasets held within the resource in two years.
+orgnaisms have similar tetranucleotide frequencies put contigs together into genome
+can use spades on the simil
+all the reads that contribute to the contigs that share the move
+tools for binning - Concoct, metabat, groupm, and crAss
+An analysis pipeline is defined as a program that combines several softwaare programs in a defined order to complete a complex analysis.
+Improperly developed, validated, and/or monitored pipelines may generate inaccurate results that may have negative consequences for patient care.
+Alignement based or alignment free
+
 \begin{figure}
 \centering
 \includegraphics[scale=0.7]{figures/popularity.png}
@@ -35,35 +65,6 @@ However, due to the large amount of data, the fact that most software is only av
 \label{Fpopularity}
 \end{figure}
 
-\section{The steps involved in metagenomic analysis}
-\begin{itemize}
-	\item \emph{The key programs that constitute metagenomic pipelines}
-	\item \emph{Maybe some benchmarking? Not sure}
-\end{itemize}
-\subsection{Quality Control, filtering, and trimming}
-A review of the efficiency of quality control algorythms can be found here \cite{zhou2014assessment}.
-Trimming is to remove adapters, primers, and over-represented sequences, and to trim poor quality basepairs...
-
-\subsection{Sequence alignment}
-Bowtie2, Tophat2, Hisat2 are used to map reads against a database
-
-\subsection{Classifying taxonomy and Annotation}
-\subsection{Assembly}
-\subsection{Binning}
-Kaiju, Kraken2, Braken, mOTU, fetchMG, MetaPhIAn Centrifuge, METEOR
-
-\subsection{Functional analyses}
-\subsection{Visualization}
-
-\section{Pipelines - chosing the right tool for the job}
-\begin{itemize}
-	\item \emph{Section introduces the most popular pipelines}
-	\item \emph{Features that distinguish these pipelines}
-	\item \emph{Some guidelines for chosing the correct pipeline appropriate for a given study}
-	\item \emph{Largest section}
-\end{itemize}
-An analysis pipeline is defined as a program that combines several softwaare programs in a defined order to complete a complex analysis.
-Improperly developed, validated, and/or monitored pipelines may generate inaccurate results that may have negative consequences for patient care.
 \begin{figure}
 \centering
 \includegraphics[scale=0.7]{figures/table.png}
@@ -72,20 +73,22 @@ Improperly developed, validated, and/or monitored pipelines may generate inaccur
 \label{Fpipelines}
 \end{figure}
 
-Improved metagenome binning and assembly using deep variational autoencoders
-Nature biotechnology - 4th Jan 2021
-the VAMB pipeline \cite{nissenimproved}
-
+\section{Differential coverage binning}
 New insights from uncultivated genomes of the global human gut microbiome
 Nature - 13th March 2019 \cite{nayfach2019new}
 
-\subsection{Resource management}
-Tradeoff between number of CPU's, memory, and time are important conciderations.
-Depends on the resources you have available and the required accuracy.
-Galaxy
-EBI Metagenomics (MGnify) has doubled the number of publicly available anaysed datasets held within the resource in two years.
+\section{Binning microbial genomes with deep learning}
+supervised vs unsupervised
+\subsection{VAMB}
+The integration of deep learning techniques into the field of metagenomics has revolutionised the field of metagenomics.
+The VAMB pipeline was developed to take advantage of variational autoencoders; a generative machine learning model that uses a combination 
+Improved metagenome binning and assembly using deep variational autoencoders
+Nature biotechnology - 4th Jan 2021
+the VAMB pipeline \cite{nissenimproved}
+\subsection{Phylopythia}
 
-\subsection{Future developments for metagenomic analysis}
+\section{Conclusion}
+Future developments for metagenomic analysis
 \begin{itemize}
 	\item \emph{New and open areas of research in which the application of metagenomic pipelines are relevant}
 	\item \emph{HMP and other }
@@ -94,3 +97,23 @@ EBI Metagenomics (MGnify) has doubled the number of publicly available anaysed d
 \end{itemize}
 \bibliography{library}
 \end{document}
+
+
+\section{Notes}
+Environmental vs human metagenome
+MGS vs MAGs - strenths and weaknesses
+
+'''
+MSPminer
+METEOR
+VAMB - machine learning one
+Metaphlan
+MGnify
+metabat
+cocacola
+NF-core-mag
+'''
+
+https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03667-3
+
+Find a list of the most recently used binning softwares - then categorise them 
