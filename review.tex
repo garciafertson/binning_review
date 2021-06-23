@@ -11,6 +11,11 @@
 \maketitle
 
 \section{Abstract}
+\begin{itemize}
+	\item \emph{Decision tree graphical abstract for the choice of binning algorithm}
+	\item \emph{Features that distinguish binning algorithms}
+	\item \emph{Some guidelines for chosing the correct binning techniques appropriate for a given study}
+\end{itemize}
 New generations of sequencing platforms coupled to numerous bioinformatics tools have led to rapid technological progress in metagenomics and metatranscriptomics to investigate complex microorganism communities.
 Nevertheless, a combination of different bioinformatic tools remains necessary to draw conclusions out of microbiota studies.
 Modular and user-friendly tools would greatly improve such studies.
@@ -20,16 +25,11 @@ The following article reviews the ...
 
 \section{Background}
 \begin{itemize}
-	\item \emph{Graphical summary for abstractj}
-	\item \emph{Variables to concider - viral, environmental, gut, long/short reading, computational,lab resourses etc - deep coverage, how did you recover the sequences, oxford nanopore vs illumina, shotgun vs 16s, number of samples? data preparation before binning, gene orientation, webserver vs local vs supercomuter, competency with the linux environment? sequence coverage, methylation signatures}
-	\item \emph{General introduction to metagenomics history }
+	\item \emph{General introduction to history of binning}
 	\item \emph{increase in popularity of the field of metagenomics}
 	\item \emph{Maybe some important discoveries found as a result of metagenomic analysis}
-	\item \emph{The key programs that constitute metagenomic pipelines}
-	\item \emph{Maybe some benchmarking? Not sure}
-	\item \emph{Section introduces the most popular pipelines}
-	\item \emph{Features that distinguish these pipelines}
-	\item \emph{Some guidelines for chosing the correct pipeline appropriate for a given study}
+	\item \emph{Features that distinguish binning algorithms}
+	\item \emph{Some guidelines for chosing the correct binning techniques appropriate for a given study}
 \end{itemize}
 Compared to amplicon, shotgun metagenome can provide functional gene profiles directly and reach a much higher resolution of taxonomic annotation.
 However, due to the large amount of data, the fact that most software is only available for Linux systems, and the large amount of computing resources are needed to perform analysis...
@@ -39,9 +39,6 @@ A review of the efficiency of quality control algorythms can be found here \cite
 Trimming is to remove adapters, primers, and over-represented sequences, and to trim poor quality basepairs
 Sequence alignment - Bowtie2, Tophat2, Hisat2 are used to map reads against a database
 Classifying taxonomy and Annotation - Binning
-Assembly
-Functional analyses
-Visualization
 Binning pipelines: Kaiju, Kraken2, Braken, mOTU, fetchMG, MetaPhIAn Centrifuge, METEOR, MetaBAT
 pipelines are chosen based on a number of factors
 Resource management
@@ -57,14 +54,11 @@ An analysis pipeline is defined as a program that combines several softwaare pro
 Improperly developed, validated, and/or monitored pipelines may generate inaccurate results that may have negative consequences for patient care.
 Alignement based or alignment free
 
-\begin{figure}
-\centering
-\includegraphics[scale=0.7]{figures/popularity.png}
-\caption[Popularity increase of the field of metagenomics]{
-	Popularity increase of the field of metagenomics. Measured by number of publications hosted on pubmed.gov }
-\label{Fpopularity}
-\end{figure}
-
+\section{Factors to concider before chosing a binning algorithm}
+	
+\section{Methods for metagenomic binning}
+\subsection{Metagenome Assembled Genomes}
+Viral, environmental, gut, long/short reading, computational,lab resourses etc - deep coverage, how did you recover the sequences, oxford nanopore vs illumina, shotgun vs 16s, number of samples? data preparation before binning, gene orientation, webserver vs local vs supercomuter, competency with the linux environment? sequence coverage, methylation signatures
 \begin{figure}
 \centering
 \includegraphics[scale=0.7]{figures/table.png}
@@ -73,11 +67,15 @@ Alignement based or alignment free
 \label{Fpipelines}
 \end{figure}
 
-\section{Differential coverage binning}
-New insights from uncultivated genomes of the global human gut microbiome
-Nature - 13th March 2019 \cite{nayfach2019new}
+\subsection{Metagenomic Species Pan-genomes}
 
 \section{Binning microbial genomes with deep learning}
+\begin{itemize}
+	\item \emph{Not sure if to focus on this or the appropriateness}
+	\item \emph{HMP and other }
+	\item \emph{The increased impact of machine learning in analysis}
+	\item \emph{Short section - just for past-present-future completeness}
+\end{itemize}
 supervised vs unsupervised
 \subsection{VAMB}
 The integration of deep learning techniques into the field of metagenomics has revolutionised the field of metagenomics.
@@ -86,21 +84,27 @@ Improved metagenome binning and assembly using deep variational autoencoders
 Nature biotechnology - 4th Jan 2021
 the VAMB pipeline \cite{nissenimproved}
 \subsection{Phylopythia}
+\subsection{Coconet}
+
+\section{Chosing the most appropriate binning algorithm}
+\subsection{Binning for viral genomes}
+New insights from uncultivated genomes of the global human gut microbiome
+Nature - 13th March 2019 \cite{nayfach2019new}
+
+\subsection{Binning for viral genomes}
 
 \section{Conclusion}
-Future developments for metagenomic analysis
 \begin{itemize}
 	\item \emph{New and open areas of research in which the application of metagenomic pipelines are relevant}
 	\item \emph{HMP and other }
 	\item \emph{The increased impact of machine learning in analysis}
 	\item \emph{Short section - just for past-present-future completeness}
+	\item \emph{Future developments for metagenomic analysis}
 \end{itemize}
 \bibliography{library}
 \end{document}
 
-
 \section{Notes}
-Environmental vs human metagenome
 MGS vs MAGs - strenths and weaknesses
 
 '''

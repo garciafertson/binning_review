@@ -46,3 +46,9 @@ metaphlan3
 
 list of EBI pipelines:
 https://www.ebi.ac.uk/metagenomics/pipelines/3.0
+
+TRENDS IN MICROBIOLOGY SCOPE AND AIMS
+Trends in Microbiology provides a multidisciplinary forum for the discussion of all aspects of microbiology: from cell biology and immunology to genetics and evolution, and ranges across virology, bacteriology, protozoology and mycology.
+Microbiology is, at present, one of the fastest moving disciplines in life sciences, thanks also to technological developments of the recent years. The relative ease and rapidity with which small genomes can be entirely sequenced is beginning to have significant impact on all areas of prokaryote biology, from pathogens to extremophiles, and will fuel new developments, for example, in drugs, vaccines and industrial enzyme research. Recent international developments are also responsible for a renewed interest in microbiology.
+The table of contents includes a lively mix of commentary, correspondence and review. Most articles are commissioned and all of them are peer-reviewed. Consequently, they make an authoritative basis for teaching and keeping abreast of developments across the field.
+The focus is on molecular microbiology and virology, and includes topics such as genomics, the gamut of plant and animal host-pathogen interactions, host immune responses, characterization and evolution of virulence determinants, cell cycle and differentiation, symbiosis in plant and animal associations, environmental microbiology, biodiversity and evolution, population dynamics, sex and mutagenesis, antibiotic resistance and production, drug and vaccine targets, as well as aspects of prion diseases and of fungal and protozoan biology.
