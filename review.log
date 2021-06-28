@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.24)  23 JUN 2021 10:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.24)  28 JUN 2021 10:13
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -281,34 +281,39 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<figures/table.png, id=78, 518.6878pt x 675.27281pt>
+<figures/table.png, id=87, 518.6878pt x 675.27281pt>
 File: figures/table.png Graphic file (type png)
 <use figures/table.png>
-Package pdftex.def Info: figures/table.png  used on input line 64.
+Package pdftex.def Info: figures/table.png  used on input line 60.
 (pdftex.def)             Requested size: 363.07898pt x 472.68774pt.
- [2] [3 <./figures/table.png>]
-(./review.bbl) [4] (./review.aux)
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 77.
+
+[2] [3 <./figures/table.png>] (./review.bbl) [4] (./review.aux)
 Package rerunfilecheck Info: File `review.out' has not changed.
-(rerunfilecheck)             Checksum: 4B94F11549F0DB431459D52DF8E1539E;2560.
+(rerunfilecheck)             Checksum: 386ADF210694BCFB4730166CE7374322;3017.
  ) 
 Here is how much of TeX's memory you used:
- 8227 strings out of 478994
- 120241 string characters out of 5864751
- 423771 words of memory out of 5000000
- 25595 multiletter control sequences out of 15000+600000
- 408058 words of font info for 42 fonts, out of 8000000 for 9000
+ 8235 strings out of 478994
+ 120368 string characters out of 5864751
+ 423751 words of memory out of 5000000
+ 25599 multiletter control sequences out of 15000+600000
+ 408366 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 71i,7n,74p,375b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,7n,74p,375b,394s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
-share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on review.pdf (4 pages, 435573 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-di
+st/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on review.pdf (4 pages, 451135 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 PDF objects out of 1000 (max. 8388607)
+ 129 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 

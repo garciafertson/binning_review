@@ -63,31 +63,33 @@ Nissen, J\BPBI N.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Zhou%
-, Su%
-\BCBL {}\ \BBA {} Ning%
-}{%
-Zhou%
+Yue%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {2014}}%
+Yue%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
 }]{%
-zhou2014assessment}
+yue2020evaluating}
 \APACinsertmetastar {%
-zhou2014assessment}%
+yue2020evaluating}%
 \begin{APACrefauthors}%
-Zhou, Q.%
-, Su, X.%
-\BCBL {}\ \BBA {} Ning, K.%
+Yue, Y.%
+, Huang, H.%
+, Qi, Z.%
+, Dou, H\BHBI M.%
+, Liu, X\BHBI Y.%
+, Han, T\BHBI F.%
+\BDBL {}Tu, J.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2014}{}{}.
+\APACrefYearMonthDay{2020}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Assessment of quality control approaches for metagenomic
-  data analysis} {Assessment of quality control approaches for metagenomic data
-  analysis}.{\BBCQ}
+{\BBOQ}\APACrefatitle {Evaluating metagenomics tools for genome binning with
+  real metagenomic datasets and CAMI datasets} {Evaluating metagenomics tools
+  for genome binning with real metagenomic datasets and cami datasets}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Scientific reports}{4}{1}{1--11}.
+\APACjournalVolNumPages{BMC bioinformatics}{21}{1}{1--15}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

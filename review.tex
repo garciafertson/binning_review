@@ -18,43 +18,39 @@
 \end{itemize}
 New generations of sequencing platforms coupled to numerous bioinformatics tools have led to rapid technological progress in metagenomics and metatranscriptomics to investigate complex microorganism communities.
 Nevertheless, a combination of different bioinformatic tools remains necessary to draw conclusions out of microbiota studies.
-Modular and user-friendly tools would greatly improve such studies.
 As sequencing costs have dropped at a rate above 'Moore's law', bigger data sets are available, and proportional costs of analysis have risen as a consequence.
-Oweing to the democritization of open source software...
-The following article reviews the ...
+Binning is the grouping of assembled metagenomic contigs by their genome of origin.
+Algorithms for binning are a rapidly evolving field.
+The number of these algorithms are growing over time.
+Selecting the most appropriate binning algorithm can be a daunting task and is influenced on computational resources available and experimental variables relating to the sequencing.
+This review serves as a roadmap to direct the reserarcher to the binning algorithm that best suits their needs.
 
 \section{Background}
 \begin{itemize}
 	\item \emph{General introduction to history of binning}
 	\item \emph{increase in popularity of the field of metagenomics}
-	\item \emph{Maybe some important discoveries found as a result of metagenomic analysis}
-	\item \emph{Features that distinguish binning algorithms}
-	\item \emph{Some guidelines for chosing the correct binning techniques appropriate for a given study}
 \end{itemize}
+\subsection{History of binning}
 Compared to amplicon, shotgun metagenome can provide functional gene profiles directly and reach a much higher resolution of taxonomic annotation.
 However, due to the large amount of data, the fact that most software is only available for Linux systems, and the large amount of computing resources are needed to perform analysis...
-The steps involved in metagenomic analysis
-Quality Control, filtering, and trimming
-A review of the efficiency of quality control algorythms can be found here \cite{zhou2014assessment}.
-Trimming is to remove adapters, primers, and over-represented sequences, and to trim poor quality basepairs
+After collection, the steps involved in preparing the sequencing data for metagenomic analysis are quality control, filtering, and trimming.
 Sequence alignment - Bowtie2, Tophat2, Hisat2 are used to map reads against a database
 Classifying taxonomy and Annotation - Binning
-Binning pipelines: Kaiju, Kraken2, Braken, mOTU, fetchMG, MetaPhIAn Centrifuge, METEOR, MetaBAT
-pipelines are chosen based on a number of factors
-Resource management
-Tradeoff between number of CPU's, memory, and time are important conciderations.
-Depends on the resources you have available and the required accuracy.
+Binning pipelines: Kaiju, Kraken2, Braken, mOTU, fetchMG, metaphlan, Centrifuge, METEOR, MetaBAT
 Galaxy
 EBI Metagenomics (MGnify) has doubled the number of publicly available anaysed datasets held within the resource in two years.
 orgnaisms have similar tetranucleotide frequencies put contigs together into genome
-can use spades on the simil
-all the reads that contribute to the contigs that share the move
+Spades
 tools for binning - Concoct, metabat, groupm, and crAss
-An analysis pipeline is defined as a program that combines several softwaare programs in a defined order to complete a complex analysis.
-Improperly developed, validated, and/or monitored pipelines may generate inaccurate results that may have negative consequences for patient care.
-Alignement based or alignment free
 
 \section{Factors to concider before chosing a binning algorithm}
+Resource management
+Tradeoff between number of CPU's, memory, and time are important conciderations.
+Depends on the resources you have available and the required accuracy.
+Pipeline vs standalone?
+Alignement based or alignment free
+An analysis pipeline is defined as a program that combines several softwaare programs in a defined order to complete a complex analysis.
+Improperly developed, validated, and/or monitored pipelines may generate inaccurate results. 
 	
 \section{Methods for metagenomic binning}
 \subsection{Metagenome Assembled Genomes}
@@ -68,6 +64,7 @@ Viral, environmental, gut, long/short reading, computational,lab resourses etc -
 \end{figure}
 
 \subsection{Metagenomic Species Pan-genomes}
+\subsection{Megagenome Assembled Genome}
 
 \section{Binning microbial genomes with deep learning}
 \begin{itemize}
@@ -77,14 +74,14 @@ Viral, environmental, gut, long/short reading, computational,lab resourses etc -
 	\item \emph{Short section - just for past-present-future completeness}
 \end{itemize}
 supervised vs unsupervised
-\subsection{VAMB}
+\subsubsection{VAMB}
 The integration of deep learning techniques into the field of metagenomics has revolutionised the field of metagenomics.
 The VAMB pipeline was developed to take advantage of variational autoencoders; a generative machine learning model that uses a combination 
 Improved metagenome binning and assembly using deep variational autoencoders
 Nature biotechnology - 4th Jan 2021
 the VAMB pipeline \cite{nissenimproved}
-\subsection{Phylopythia}
-\subsection{Coconet}
+\subsubsection{Phylopythia}
+\subsubsection{Coconet}
 
 \section{Chosing the most appropriate binning algorithm}
 \subsection{Binning for viral genomes}
@@ -101,23 +98,21 @@ Nature - 13th March 2019 \cite{nayfach2019new}
 	\item \emph{Short section - just for past-present-future completeness}
 	\item \emph{Future developments for metagenomic analysis}
 \end{itemize}
+
+\section{Notes}
+Make a table with the following software:
+\begin{itemize}
+	\item \emph{MSPminer}
+	\item \emph{METEOR}
+	\item \emph{VAMB}
+	\item \emph{Metaphlan}
+	\item \emph{MGnify}
+	\item \emph{metabat}
+	\item \emph{cocacola}
+	\item \emph{NF-core-mag}
+\end{itemize}
+A review on the benchmarking binning algorithms was done by \citeNP{yue2020evaluating}.
+
 \bibliography{library}
 \end{document}
 
-\section{Notes}
-MGS vs MAGs - strenths and weaknesses
-
-'''
-MSPminer
-METEOR
-VAMB - machine learning one
-Metaphlan
-MGnify
-metabat
-cocacola
-NF-core-mag
-'''
-
-https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-020-03667-3
-
-Find a list of the most recently used binning softwares - then categorise them 
