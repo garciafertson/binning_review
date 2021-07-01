@@ -8,7 +8,8 @@
 \bibliographystyle{apacite}
 
 \title{Metagenomic Binning Pipelines - the State of the Art}
-\author{Theo Portlock}
+\date{}
+%\author{Theo Portlock}
 \begin{document}
 \maketitle
 
@@ -32,6 +33,7 @@ This review serves as a roadmap to direct the researcher to the binning algorith
 	\item \emph{General introduction to history of binning}
 	\item \emph{increase in popularity of the field of metagenomics}
 	\item \emph{Talk about reduced cost in sequencing and scheduling efficiency in pipelines}
+	\item \emph{Talk about HMP}
 \end{itemize}
 Compared to amplicon, shotgun metagenome can provide functional gene profiles directly and reach a much higher resolution of taxonomic annotation.
 However, due to the high demands on computational resources, cost, and expertise necessary to perform this analysis, this method has been used
@@ -40,28 +42,28 @@ At the time of writing, shotgun metagenomic sequeng costs on average three times
 A review on the benchmarking binning algorithms was done by \citeNP{yue2020evaluating}.
 	
 \section{Methods for metagenomic binning}
-\subsection{Metagenome Assembled Genomes}
-Viral, environmental, gut, long/short reading, computational,lab resourses etc - deep coverage, how did you recover the sequences, oxford nanopore vs illumina, shotgun vs 16s, number of samples? data preparation before binning, gene orientation, webserver vs local vs supercomuter, competency with the linux environment? sequence coverage, methylation signatures
-
-\subsection{Metagenomic Species Pan-genomes}
-\subsection{Megagenome Assembled Genome}
-
-\subsection{Binning microbial genomes with deep learning}
 \begin{itemize}
 	\item \emph{Not sure if to focus on this or the appropriateness}
-	\item \emph{HMP and other }
 	\item \emph{The increased impact of machine learning in analysis}
 	\item \emph{Short section - just for past-present-future completeness}
 \end{itemize}
-supervised vs unsupervised
-\subsubsection{VAMB}
+\subsection{Metagenome Assembled Genomes}
+A Metagenome-Assembled Genome (MAG) is a single-taxon assembly based on one or more binned metagenomes that has been asserted to be a close representation to an actual individual genome (that could match an already existing isolate or represent a novel isolate).
+
+\subsection{Metagenomic Species Pan-genomes}
+Microbial pan-genomes are gene repertoires composed of core genes present in all strains and accessory genes present in only some of them (Medini et al., 2005). In a shotgun metagenomic sequencing context, we define as shared the genes detected in some samples where the species is not present.
+
+A strain found in a sample is an instance of the species pan-genome: it is made of all the species (shared) core genes and of a subset of (shared) accessory genes. Core genes are suitable for taxonomic profiling at species-level while accessory genes can be used to compare strains across samples. Genes tagged as shared should be used carefully as they contain false positives counts or are subject to horizontal transfer.
+
+We assumed that core genes of a microbial species should be consistently detected in samples where the species is present if sequencing depth allows (co-occurrence) and should yield directly proportional mapped reads counts across samples (co-abundance). Remarkably, a core and an accessory gene should have proportional counts only in the subset of samples carrying a strain with that accessory gene
+\subsection{Megagenome Assembled Genome}
+
+\subsection{Binning microbial genomes with deep learning}
 The integration of deep learning techniques into the field of metagenomics has revolutionised the field of metagenomics.
 The VAMB pipeline was developed to take advantage of variational autoencoders; a generative machine learning model that uses a combination 
 Improved metagenome binning and assembly using deep variational autoencoders
 Nature biotechnology - 4th Jan 2021
 the VAMB pipeline \cite{nissenimproved}
-\subsubsection{Phylopythia}
-\subsubsection{Coconet}
 
 \section{Chosing the most appropriate binning algorithm}
 \begin{sidewaystable}
@@ -99,6 +101,7 @@ Nature - 13th March 2019 \cite{nayfach2019new}
 %Classifying taxonomy and Annotation - Binning
 %EBI Metagenomics (MGnify) has doubled the number of publicly available anaysed datasets held within the resource in two years.
 %Organisms have similar tetranucleotide frequencies put contigs together into genome
+%Viral, environmental, gut, long/short reading, computational,lab resourses etc - deep coverage, how did you recover the sequences, oxford nanopore vs illumina, shotgun vs 16s, number of samples? data preparation before binning, gene orientation, webserver vs local vs supercomuter, competency with the linux environment? sequence coverage, methylation signatures
 
 \bibliography{library}
 \end{document}
