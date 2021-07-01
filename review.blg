@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2021/Arch Linux)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: review.aux
 The style file: apacite.bst
+A level-1 auxiliary file: tables/Table1_binning_software_since2017.tsv.aux
 Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=8) to 20 items from 10.
@@ -15,7 +16,7 @@ Database file #1: library.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
 You've used 3 entries,
             6951 wiz_defined-function locations,
-            1290 strings with 11580 characters,
+            1291 strings with 11628 characters,
 and the built_in function-call counts, 7878 in all, are:
 = -- 927
 > -- 81

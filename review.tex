@@ -3,6 +3,8 @@
 \usepackage{apacite}
 \usepackage{graphicx}
 \usepackage{a4wide}
+\usepackage{booktabs}
+\usepackage{rotating}
 \bibliographystyle{apacite}
 
 \title{Metagenomic Binning Pipelines - the State of the Art}
@@ -14,7 +16,7 @@
 \begin{itemize}
 	\item \emph{Decision tree graphical abstract for the choice of binning algorithm}
 	\item \emph{Features that distinguish binning algorithms}
-	\item \emph{Some guidelines for chosing the correct binning techniques appropriate for a given study}
+	\item \emph{Some guidelines for choosing the correct binning techniques appropriate for a given study}
 \end{itemize}
 New generations of sequencing platforms coupled to numerous bioinformatics tools have led to rapid technological progress in metagenomics and metatranscriptomics to investigate complex microorganism communities.
 Nevertheless, a combination of different bioinformatic tools remains necessary to draw conclusions out of microbiota studies.
@@ -23,50 +25,28 @@ Binning is the grouping of assembled metagenomic contigs by their genome of orig
 Algorithms for binning are a rapidly evolving field.
 The number of these algorithms are growing over time.
 Selecting the most appropriate binning algorithm can be a daunting task and is influenced on computational resources available and experimental variables relating to the sequencing.
-This review serves as a roadmap to direct the reserarcher to the binning algorithm that best suits their needs.
+This review serves as a roadmap to direct the researcher to the binning algorithm that best suits their needs.
 
 \section{Background}
 \begin{itemize}
 	\item \emph{General introduction to history of binning}
 	\item \emph{increase in popularity of the field of metagenomics}
+	\item \emph{Talk about reduced cost in sequencing and scheduling efficiency in pipelines}
 \end{itemize}
-\subsection{History of binning}
 Compared to amplicon, shotgun metagenome can provide functional gene profiles directly and reach a much higher resolution of taxonomic annotation.
-However, due to the large amount of data, the fact that most software is only available for Linux systems, and the large amount of computing resources are needed to perform analysis...
-After collection, the steps involved in preparing the sequencing data for metagenomic analysis are quality control, filtering, and trimming.
-Sequence alignment - Bowtie2, Tophat2, Hisat2 are used to map reads against a database
-Classifying taxonomy and Annotation - Binning
-Binning pipelines: Kaiju, Kraken2, Braken, mOTU, fetchMG, metaphlan, Centrifuge, METEOR, MetaBAT
-Galaxy
-EBI Metagenomics (MGnify) has doubled the number of publicly available anaysed datasets held within the resource in two years.
-orgnaisms have similar tetranucleotide frequencies put contigs together into genome
-Spades
-tools for binning - Concoct, metabat, groupm, and crAss
-
-\section{Factors to concider before chosing a binning algorithm}
-Resource management
-Tradeoff between number of CPU's, memory, and time are important conciderations.
-Depends on the resources you have available and the required accuracy.
-Pipeline vs standalone?
-Alignement based or alignment free
-An analysis pipeline is defined as a program that combines several softwaare programs in a defined order to complete a complex analysis.
-Improperly developed, validated, and/or monitored pipelines may generate inaccurate results. 
+However, due to the high demands on computational resources, cost, and expertise necessary to perform this analysis, this method has been used
+The substantial decrease in cost of sequencing however has lessened this burden. 
+At the time of writing, shotgun metagenomic sequeng costs on average three times as much as 16S sequencing comparitavely.
+A review on the benchmarking binning algorithms was done by \citeNP{yue2020evaluating}.
 	
 \section{Methods for metagenomic binning}
 \subsection{Metagenome Assembled Genomes}
 Viral, environmental, gut, long/short reading, computational,lab resourses etc - deep coverage, how did you recover the sequences, oxford nanopore vs illumina, shotgun vs 16s, number of samples? data preparation before binning, gene orientation, webserver vs local vs supercomuter, competency with the linux environment? sequence coverage, methylation signatures
-\begin{figure}
-\centering
-\includegraphics[scale=0.7]{figures/table.png}
-\caption[Current pipelines available for metagenomic analysis]{
-	Current pipelines available for metagenomic analysis - Something like this? from a 2017 review}
-\label{Fpipelines}
-\end{figure}
 
 \subsection{Metagenomic Species Pan-genomes}
 \subsection{Megagenome Assembled Genome}
 
-\section{Binning microbial genomes with deep learning}
+\subsection{Binning microbial genomes with deep learning}
 \begin{itemize}
 	\item \emph{Not sure if to focus on this or the appropriateness}
 	\item \emph{HMP and other }
@@ -84,11 +64,25 @@ the VAMB pipeline \cite{nissenimproved}
 \subsubsection{Coconet}
 
 \section{Chosing the most appropriate binning algorithm}
+\begin{sidewaystable}
+\begin{tiny}
+\centering
+\caption[Comparison of binning algorithms]{Comparison of binning algorithms}
+	\include{tables/Table1_binning_software_since2017.tsv.tex}
+\label{Tbinningsoftware}
+\end{tiny}
+\end{sidewaystable}
+
+Resource management is an important factor in the choice of binning algorithm.
+The tradeoff between number of CPU's, memory, and time are important considerations.
+Pipeline vs standalone?
+Alignment based or alignment free
+An analysis pipeline is defined as a program that combines several programs in a defined order to complete a complex analysis.
+Improperly developed, validated, and/or monitored pipelines may generate inaccurate results. 
+
 \subsection{Binning for viral genomes}
 New insights from uncultivated genomes of the global human gut microbiome
 Nature - 13th March 2019 \cite{nayfach2019new}
-
-\subsection{Binning for viral genomes}
 
 \section{Conclusion}
 \begin{itemize}
@@ -99,19 +93,12 @@ Nature - 13th March 2019 \cite{nayfach2019new}
 	\item \emph{Future developments for metagenomic analysis}
 \end{itemize}
 
-\section{Notes}
-Make a table with the following software:
-\begin{itemize}
-	\item \emph{MSPminer}
-	\item \emph{METEOR}
-	\item \emph{VAMB}
-	\item \emph{Metaphlan}
-	\item \emph{MGnify}
-	\item \emph{metabat}
-	\item \emph{cocacola}
-	\item \emph{NF-core-mag}
-\end{itemize}
-A review on the benchmarking binning algorithms was done by \citeNP{yue2020evaluating}.
+%\section{Notes}
+%After collection, the steps involved in preparing the sequencing data for metagenomic analysis are quality control, filtering, and trimming.
+%Sequence alignment - Bowtie2, Tophat2, Hisat2 are used to map reads against a database
+%Classifying taxonomy and Annotation - Binning
+%EBI Metagenomics (MGnify) has doubled the number of publicly available anaysed datasets held within the resource in two years.
+%Organisms have similar tetranucleotide frequencies put contigs together into genome
 
 \bibliography{library}
 \end{document}
