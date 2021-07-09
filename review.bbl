@@ -63,6 +63,38 @@ Nissen, J\BPBI N.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Tettelin%
+\ \protect \BOthers {.}}{%
+Tettelin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+tettelin2005genome}
+\APACinsertmetastar {%
+tettelin2005genome}%
+\begin{APACrefauthors}%
+Tettelin, H.%
+, Masignani, V.%
+, Cieslewicz, M\BPBI J.%
+, Donati, C.%
+, Medini, D.%
+, Ward, N\BPBI L.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Genome analysis of multiple pathogenic isolates of
+  Streptococcus agalactiae: implications for the microbial “pan-genome”}
+  {Genome analysis of multiple pathogenic isolates of streptococcus agalactiae:
+  implications for the microbial “pan-genome”}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the National Academy of
+  Sciences}{102}{39}{13950--13955}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Yue%
 \ \protect \BOthers {.}}{%
 Yue%
