@@ -35,6 +35,60 @@ Binning algorithms are defined as the grouping of assembled metagenomic contigs 
 Selecting the most appropriate binning algorithm can be a daunting task and is influenced by many factors 
 This review serves as a guide to direct the researcher to the binning algorithm that best suits their needs.
 
+\section*{Index}
+\begin{itemize}
+\item\emph{Abstract} 
+\item\emph{Background/Introduction} 
+          \begin{itemize}
+	  	\item\emph{Binning problem definition      (recover biological entities from metagenomic sequencing)} 
+          	\item\emph{problem relevance       (Explosion in metagenomics, reduction in sequencing cost, increased computer capacity)} 
+          	\item\emph{Review objectives       (Brief summary on popular tools, innovations overview of recent tools)} 
+	  \end{itemize}
+ \item\emph{Popular/Previous Binning software} 
+ 	\begin{itemize}
+         	\item\emph{Proposed solutions      (bin contings into bins(MAG if good quality) based on their kmer composition and                              abundance/coabundance)} 
+         	\item\emph{Tools available (Cite recent benchmark)} 
+	\end{itemize}   
+\item\emph{Overview of recent metagenomic binning tools} 
+          \begin{itemize}
+	  	\item\emph{Inovations in binning tools}
+	  	\begin{itemize}
+                	 \item\emph{Inovations in proposed solutions/ strategy innovations} 
+                         Read binning 
+ 		   	 gene-abundance binning (CAG, MGS, MSPi)
+                         Integrate new experimental data 
+                 	\item\emph{Software/algorithms innovations} 
+                         machine-learning/deep-learning implementation
+		\end{itemize}
+           \item\emph{Inovations in specific biological questions} 
+                 Viral genomes and viral strains; 
+                 Endosymbionts 
+           \end{itemize}     
+ \item\emph{Choosing a binning algorithm} 
+         \begin{itemize}
+	  \item\emph{Identifiy start point variables} 
+          	\begin{itemize}
+      			\item\emph{Sample origin (Host contamination, diversity)} 
+                	 \item\emph{Number of samples (some tools require many samples to perform well)} 
+                	 \item\emph{Sequencing technology (Most tools employ illumina, LongReads are increasing) }
+                	 \item\emph{Computational resources available }
+		\end{itemize}
+         \item\emph{Identify endpoint} 
+		\begin{itemize}
+			\item\emph{organism of interest viral(ref viral catalogue), bacteria, all} 
+          	\end{itemize}       
+         \item\emph{Tools are complementary MSP/Metabat} 
+         \end{itemize} 
+ \item\emph{Conclusions} 
+         	\begin{itemize}
+		\item\emph{Current limitations and future directions} 
+                 Do not perform well on multiple strains, on the same sample 
+ 		\end{itemize}
+ Figure. Binning software historical citations barplot 
+ Figure. Decision tree, overview of metagenomic binning 
+ Table. List of binning software since 2017                  
+\end{itemize}
+
 \section*{Background}
 The explosion in popularity and success in the field of metagenomics over the last 25 years can be largely attributed to the advances in computing tecnologies.
 An example of the outcomes of this can be found in the Human Microbiome Project; a project that has been greatly imrpoved the understanding of the microbila flora involved in human health and disease.
@@ -95,6 +149,44 @@ Improperly developed, validated, and/or monitored pipelines may generate inaccur
 \subsection*{MSPs, binning co-abundant genes}
 Binning of co-abuntant genes represents an alternative proposal to reconstruct species/biological entities from a set of metagenomic samples.
 Co-abundant gene binning methods assume each gene coming from a shared chromosome will display proportional abundances across samples, if you have enough samples from a common enviroment you can identify the sets of genes from a common organism of origin (MLGs Chameleon-clust 2012, CAGs and MGSs Canopy 2014, Markovclust-MGCs Karlsson 2013, MSPs MSPminner 2018).
+<<<<<<< HEAD
+
+To the extent of our knwoledge, in the past few years MSPminer is the only available Software exploiting this approach. MSPminer introduced a robust proportionality measure detecting co abundant but no necesarily co ocurring. This tools groups co-abundant genes into Metagenomic Species Pan-genomes or MSPs and classify genes within an MSP as core, accesory and shared.  
+
+The factors that impact directly on MSPs quality include the sample composition, the sequencing depth, the previos bioinforamtic steps to build the reference gene dataset and to map the reads.
+A high number of samples with varying phenotipes improve the quality of MSPs.
+
+MSPs can be employed for taxonomic profiles of new samples from similar ecosystems, to compare strains between samples building a presence/absence table of accesory genes and for biomarker discovery. By binning contigs carrying genes from the same MSP it is also possible to build a MAG.
+
+Co-abundant gene binning methods perform better in large sample datasets
+
+\subsection{Metagenomic Species Pan-genomes}
+Microbial pan-genomes are gene repertoires composed of core genes present in all strains and accessory genes present in only some of them (Medini et al., 2005). In a shotgun metagenomic sequencing context, we define as shared the genes detected in some samples where the species is not present.
+
+A strain found in a sample is an instance of the species pan-genome: it is made of all the species (shared) core genes and of a subset of (shared) accessory genes. Core genes are suitable for taxonomic profiling at species-level while accessory genes can be used to compare strains across samples. Genes tagged as shared should be used carefully as they contain false positives counts or are subject to horizontal transfer.
+ 
+
+
+	\section{Conclusion}
+\begin{itemize}
+	\item \emph{New and open areas of research in which the application of metagenomic pipelines are relevant}
+	\item \emph{HMP and other }
+	\item \emph{The increased impact of machine learning in analysis}
+	\item \emph{Short section - just for past-present-future completeness}
+	\item \emph{Future developments for metagenomic analysis}
+\end{itemize}
+
+\subsection{Weaknesses and future developments}
+Until now binning methods perform poorly in samples containing similar strains.
+
+%\section{Notes}
+%After collection, the steps involved in preparing the sequencing data for metagenomic analysis are quality control, filtering, and trimming.
+%Sequence alignment - Bowtie2, Tophat2, Hisat2 are used to map reads against a database
+%Classifying taxonomy and Annotation - Binning
+%EBI Metagenomics (MGnify) has doubled the number of publicly available anaysed datasets held within the resource in two years.
+%Organisms have similar tetranucleotide frequencies put contigs together into genome
+%Viral, environmental, gut, long/short reading, computational,lab resourses etc - deep coverage, how did you recover the sequences, oxford nanopore vs illumina, shotgun vs 16s, number of samples? data preparation before binning, gene orientation, webserver vs local vs supercomuter, competency with the linux environment? sequence coverage, methylation signatures
+=======
 To the extent of our knwoledge, in the past few years MSPminer is the only available Software exploiting this approach. MSPminer introduced a robust proportionality measure detecting co abundant but no necesarily co ocurring. This tools groups co-abundant genes into Metagenomic Species Pan-genomes or \glspl{MSP} and classify genes within an MSP as core, accesory and shared.  
 The factors that impact directly on \gls{MSP} quality include the sample composition, the sequencing depth, the previos bioinforamtic steps to build the reference gene dataset and to map the reads.
 A high number of samples with varying phenotipes improve the quality of \glspl{MSP}.
@@ -118,6 +210,7 @@ Future developments for metagenomic analysis
 % EBI Metagenomics (MGnify) has doubled the number of publicly available anaysed datasets held within the resource in two years.
 % Organisms have similar tetranucleotide frequencies put contigs together into genome
 % Viral, environmental, gut, long/short reading, computational,lab resourses etc - deep coverage, how did you recover the sequences, oxford nanopore vs illumina, shotgun vs 16s, number of samples? data preparation before binning, gene orientation, webserver vs local vs supercomuter, competency with the linux environment? sequence coverage, methylation signatures
+>>>>>>> 0b81c509cb38a218555a68fc24a137c2e6560df2
 
 \bibliography{library}
 \end{document}
