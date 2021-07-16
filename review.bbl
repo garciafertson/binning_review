@@ -1,6 +1,68 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Arisdakessian%
+, Nigro%
+, Steward%
+, Poisson%
+\BCBL {}\ \BBA {} Belcaid%
+}{%
+Arisdakessian%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+arisdakessian2021coconet}
+\APACinsertmetastar {%
+arisdakessian2021coconet}%
+\begin{APACrefauthors}%
+Arisdakessian, C\BPBI G.%
+, Nigro, O\BPBI D.%
+, Steward, G\BPBI F.%
+, Poisson, G.%
+\BCBL {}\ \BBA {} Belcaid, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {CoCoNet: an efficient deep learning tool for viral
+  metagenome binning} {Coconet: an efficient deep learning tool for viral
+  metagenome binning}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bioinformatics}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nayfach%
+\ \protect \BOthers {.}}{%
+Nayfach%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+nayfach2021metagenomic}
+\APACinsertmetastar {%
+nayfach2021metagenomic}%
+\begin{APACrefauthors}%
+Nayfach, S.%
+, P{\'a}ez-Espino, D.%
+, Call, L.%
+, Low, S\BPBI J.%
+, Sberro, H.%
+, Ivanova, N\BPBI N.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Metagenomic compendium of 189,680 DNA viruses from the
+  human gut microbiome} {Metagenomic compendium of 189,680 dna viruses from the
+  human gut microbiome}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature Microbiology}{}{}{1--11}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Nayfach%
 , Shi%
 , Seshadri%
@@ -60,38 +122,6 @@ Nissen, J\BPBI N.%
   deep variational autoencoders}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Nature Biotechnology}{}{}{1--6}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Tettelin%
-\ \protect \BOthers {.}}{%
-Tettelin%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2005}}%
-}]{%
-tettelin2005genome}
-\APACinsertmetastar {%
-tettelin2005genome}%
-\begin{APACrefauthors}%
-Tettelin, H.%
-, Masignani, V.%
-, Cieslewicz, M\BPBI J.%
-, Donati, C.%
-, Medini, D.%
-, Ward, N\BPBI L.%
-\BDBL {}others%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2005}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Genome analysis of multiple pathogenic isolates of
-  Streptococcus agalactiae: implications for the microbial “pan-genome”}
-  {Genome analysis of multiple pathogenic isolates of streptococcus agalactiae:
-  implications for the microbial “pan-genome”}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Proceedings of the National Academy of
-  Sciences}{102}{39}{13950--13955}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
