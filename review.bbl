@@ -33,68 +33,6 @@ Arisdakessian, C\BPBI G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Nayfach%
-\ \protect \BOthers {.}}{%
-Nayfach%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2021}}%
-}]{%
-nayfach2021metagenomic}
-\APACinsertmetastar {%
-nayfach2021metagenomic}%
-\begin{APACrefauthors}%
-Nayfach, S.%
-, P{\'a}ez-Espino, D.%
-, Call, L.%
-, Low, S\BPBI J.%
-, Sberro, H.%
-, Ivanova, N\BPBI N.%
-\BDBL {}others%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2021}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {Metagenomic compendium of 189,680 DNA viruses from the
-  human gut microbiome} {Metagenomic compendium of 189,680 dna viruses from the
-  human gut microbiome}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Nature Microbiology}{}{}{1--11}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Nayfach%
-, Shi%
-, Seshadri%
-, Pollard%
-\BCBL {}\ \BBA {} Kyrpides%
-}{%
-Nayfach%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2019}}%
-}]{%
-nayfach2019new}
-\APACinsertmetastar {%
-nayfach2019new}%
-\begin{APACrefauthors}%
-Nayfach, S.%
-, Shi, Z\BPBI J.%
-, Seshadri, R.%
-, Pollard, K\BPBI S.%
-\BCBL {}\ \BBA {} Kyrpides, N\BPBI C.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2019}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {New insights from uncultivated genomes of the global
-  human gut microbiome} {New insights from uncultivated genomes of the global
-  human gut microbiome}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Nature}{568}{7753}{505--510}.
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Nissen%
 \ \protect \BOthers {.}}{%
 Nissen%
