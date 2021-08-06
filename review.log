@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.24)  5 AUG 2021 15:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.24)  6 AUG 2021 12:19
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -566,33 +566,42 @@ LaTeX Warning: No \author given.
 
 \openout3 = `review.ist'.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-[3] [4]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+pdfTeX warning: pdflatex (file ./figures/figure_binning_software.001.pdf): PDF 
+inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/figure_binning_software.001.pdf, id=91, 1927.2pt x 1084.05pt>
+File: figures/figure_binning_software.001.pdf Graphic file (type pdf)
+<use figures/figure_binning_software.001.pdf>
+Package pdftex.def Info: figures/figure_binning_software.001.pdf  used on input
+ line 42.
+(pdftex.def)             Requested size: 385.43318pt x 216.80615pt.
+[2 <./figures/figure_binning_software.001.pdf>] [3] [4] [5]
 \openout2 = `tables/Table1_binning_software_since2017.tsv.aux'.
 
- (./tables/Table1_binning_software_since2017.tsv.tex) [5] [6
+
+(./tables/Table1_binning_software_since2017.tsv.tex) (./review.bbl [6] [7
 
 
 
-]
-(./review.bbl)
+])
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
 This document will not have a glossary.
 
-[7] (./review.aux (./tables/Table1_binning_software_since2017.tsv.aux))
+[8] (./review.aux (./tables/Table1_binning_software_since2017.tsv.aux))
 Package rerunfilecheck Info: File `review.out' has not changed.
 (rerunfilecheck)             Checksum: 2468D686FDEC5232CBC05377B9B56741;3329.
  ) 
 Here is how much of TeX's memory you used:
- 13423 strings out of 478994
- 197609 string characters out of 5864751
- 580202 words of memory out of 5000000
- 30630 multiletter control sequences out of 15000+600000
+ 13433 strings out of 478994
+ 197910 string characters out of 5864751
+ 580270 words of memory out of 5000000
+ 30636 multiletter control sequences out of 15000+600000
  409459 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,11n,102p,986b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 102i,11n,102p,986b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:CPU} has been referenced but does not exist, 
 replaced by a fixed one
 
@@ -611,10 +620,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts
 msfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5
 .pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/shar
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on review.pdf (7 pages, 131057 bytes).
+Output written on review.pdf (8 pages, 486311 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 190 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
