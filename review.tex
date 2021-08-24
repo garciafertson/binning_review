@@ -58,10 +58,12 @@ However, due to the high demands on computational resources, cost, and expertise
 As the cost of sequencing is rapidly falling, this burden has been significantly lessened.
 Whole Genome Shotgun sequences does not require cultivation.
 At the time of writing, shotgun metagenomic sequencing costs on average three times as much as 16S sequencing in comparison.
-The objectives of this review is for the reader to be better informed about the latest algorithms (since 2017) for binning metagenomic samples.
-The second part of this review is for the reader to be informed about distinguishing factors between the methods.
-The last part is for the reader to make an informed decision based on those factors for their needs.
-This review will be broken down into the following sections:
+%The objectives of this review is for the reader to be better informed about the latest algorithms (since 2017) for binning metagenomic samples.
+%The second part of this review is for the reader to be informed about distinguishing factors between the methods.
+%The last part is for the reader to make an informed decision based on those factors for their needs.
+%This review will be broken down into the following sections:
+Here we will briefly recapitulate recent binning algorithms and highlight some of the developments in the field, among them, the use of new algorithms and strategies employed to achieve the goal of identifying the organisms composing microbiome communities.
+We hope this overview could aid the reader to choose a binning algorithm or a combination of them based on their specific needs.
 
 \section{Overview of recent methods for metagenomic binning}
 \subsection{Innovations in recent binning strategies}
@@ -71,54 +73,76 @@ This review will be broken down into the following sections:
 %gene-abundance binning (CAG, MGS, MSPi)
 %Integrate new experimental data 
 %Figure. Binning software historical citations barplot 
-A metagenomic sample is comprised of many organisms and the standard procedure is to retrieve the sequences from the mixture of organisms.
-The final goal of binning is to reconstruct the sequences from each organism present in the original sample.
-Currently we can distinguish from 3 different stategies in binning algorithms, read binning, contig binning, and gene binning.
-Among the binning tools developed in recent years a subset of them are dedicated to cluster reads (read-binning) (MetaBBC-LR, BioBloom Tools, CLAME, LVQ-KKN, Meta VW, HirBin, MEGAN-LR).
-The main purpose of read-binning tools is to pre-process reads into clusters for a posterior targeted assembly, here we find reference-free and non-reference-free tools, and tools designed for short-read or long-read sequencing technologies.
-The majority of binning tools we can find are oriented toward clustering contigs (contig-binning) into bins, which may represent the genome from a single biological entity/organism.
-Contig-binning tools normally rely on coverage information and sequence composition. 
-Binning contigs have played a central role in software development in the field, a review on the benchmarking binning algorithms was done by \citeNP{yue2020evaluating}.
+
+A metagenomic sample is comprised of many organisms and the goal of binning is to reconstruct the sequences from each organism present in the original sample.
+The majority of binning tools we can find are oriented toward clustering contigs (contig-binning) into bins, which may represent the genome from a single biological entity/organism. A \gls{MAG} is a single-taxon assembly based on one or more binned metagenomes that has been asserted to be a close representation to an actual individual genome (that could match an already existing isolate or represent a novel isolate).
+
+Current contig-binning tools normally are reference free (i.e do not depend on reference sequences to perform clustering) and rely on coverage information and sequence composition.  
 Progress in contig-binning algorithms can be seen in the proposals to integrate new sources of information (for example, from scaffold-graphs(Binnacle), paired-end reads(COCACOLA), or 3D contact information(MetaTOR)) and state of the art algorithms in machine learning (CoCoNet, \gls{VAMB}).
+We also notice the development of Bin refinement tools (DAS-tool, Binning Refiner), this tools rely on the outputs from multiple contig-binning algorithms and attempt to combine them to produce better results.
 
-\subsubsection{Metagenome Assembled Genomes}
-A \gls{MAG} is a single-taxon assembly based on one or more binned metagenomes that has been asserted to be a close representation to an actual individual genome (that could match an already existing isolate or represent a novel isolate).
+Binning of contigs have played a central role in software development in the field, a review on the benchmarking binning algorithms was done by \citeNP{yue2020evaluating}. 
+%Currently we can distinguish from 3 different stategies in binning algorithms, read binning, contig binning, and gene binning.
+Beside contig-binning tools we can also distinguish read-binning tools and co-abundant-gene-binning tools.
 
-\subsubsection{MSPs, binning co-abundant genes}
+The main purpose of read-binning tools is to pre-process reads into clusters for a posterior targeted assembly, here we find reference-free and non-reference-free tools, and tools designed for short-read or long-read sequencing technologies. Among the binning tools developed in recent years a subset of them are dedicated to cluster reads (read-binning) (MetaBBC-LR, BioBloom Tools, CLAME, LVQ-KKN, Meta VW, HirBin, MEGAN-LR).
+
+%\subsubsection{Metagenome Assembled Genomes}
+\subsubsection{ binning co-abundant genes}
 Binning of co-abundant genes represents an alternative proposal to reconstruct species/biological entities from a set of metagenomic samples.
-Co-abundant gene binning methods assume each gene coming from a shared chromosome will display proportional abundances across samples, if you have enough samples from a common environment you can identify the sets of genes from a common organism of origin (MLGs Chameleon-clust 2012, CAGs and MGSs Canopy 2014, Markovclust-MGCs Karlsson 2013, MSPs MSPminner 2018).
-To the extent of our knowledge, in the past few years MSPminer was the only Software developed exploiting this approach. MSPminer introduced a robust proportionality measure detecting co abundant but no necessarily co-occurring.
-This tools groups co-abundant genes into Metagenomic Species Pan-genomes or \glspl{MSP} and classify genes within an MSP as core, accessory and shared.  
+Co-abundant gene binning methods assume each gene coming from a shared chromosome will display proportional abundances across samples, if you have enough samples from a similar environment you can identify the sets of genes from a common organism of origin (MLGs Chameleon-clust 2012, CAGs and MGSs Canopy 2014, Markovclust-MGCs Karlsson 2013, MSPs MSPminner 2018).
+In the past few years the MSPminer software was developed exploiting this approach. MSPminer introduced a robust proportionality measure detecting co-abundant but no necessarily co-occurring.
+This tools groups co-abundant genes into Metagenomic Species Pan-genomes or \glspl{MSP} and classify genes within an MSP as core, accessory and shared. Core genes are present in all strains, accessory are present only in some(Medini et al., 2005), the shared category applies for those genes which may be present in more than one MSP due to horizontal transfer.
+%Microbial pan-genomes are gene repertoires composed of core genes present in all strains and accessory genes present in only some of them (Medini et al., 2005).
 The factors that impact directly on \gls{MSP} quality include the sample composition, the sequencing depth, the previous bioinforamtic steps to build the reference gene dataset and to map the reads.
-A high number of samples with varying phenotypes improve the quality of \glspl{MSP}.
-MSPs can be employed for taxonomic profiles of new samples from similar ecosystems, to compare strains between samples building a presence/absence table of accessory genes and for biomarker discovery.
+%A high number of samples with varying phenotypes improve the quality of \glspl{MSP}.
+MSPs can be employed for taxonomic profiles of new samples from similar ecosystems at the species level, and also to compare strains between samples building a presence/absence table of accessory genes and for biomarker discovery.
 By binning contigs carrying genes from the same MSP it is also possible to build a \gls{MAG}.
 
-\subsubsection{Metagenomic Species Pan-genomes}
-Microbial pan-genomes are gene repertoires composed of core genes present in all strains and accessory genes present in only some of them (Medini et al., 2005).
-In a shotgun metagenomic sequencing context, we define as shared the genes detected in some samples where the species is not present.
-A strain found in a sample is an instance of the species pan-genome: it is made of all the species (shared) core genes and of a subset of (shared) accessory genes. Core genes are suitable for taxonomic profiling at species-level while accessory genes can be used to compare strains across samples. Genes tagged as shared should be used carefully as they contain false positives counts or are subject to horizontal transfer.
-Core genes are suitable for taxonomic profiling at species-level while accessory genes can be used to compare strains across samples.
-Genes tagged as shared should be used carefully as they contain false positives counts or are subject to horizontal transfer.
+%\subsubsection{Metagenomic Species Pan-genomes}
+%In a shotgun metagenomic sequencing context, we define as shared the genes detected in some samples where the species is not present.
+%A strain found in a sample is an instance of the species pan-genome: it is made of all the species (shared) core genes and of a subset of (shared) accessory genes. Core genes are suitable for taxonomic profiling at species-level while accessory genes can be used to compare strains across samples. Genes tagged as shared should be used carefully as they contain false positives counts or are subject to horizontal transfer.
+%Core genes are suitable for taxonomic profiling at species-level while accessory genes can be used to compare strains across samples.
+%Genes tagged as shared should be used carefully as they contain false positives counts or are subject to horizontal transfer.
 
 \subsubsection{Binning microbial genomes with deep learning}
 The integration of deep learning techniques into the field of metagenomics has revolutionised the field of metagenomics.
 The \gls{VAMB} pipeline was developed to take advantage of variational autoencoders; a generative machine learning model that uses a deep variational autoencoders \cite{nissenimproved}...
 COCONET \cite{arisdakessian2021coconet}...
 
-\subsection{Binning for solving new biological challenges/ for viral genome}
-%Viral genomes and viral strains; 
+
+\subsection{Binning of viral genomes}
 %Endosymbionts 
 %2021 viral catalog \cite{nayfach2021metagenomic}...
 %New insights from uncultivated genomes of the global human gut microbiome \cite{nayfach2019new}...
 %Also mention coconet suitability for viral genomes...
-Most binning algorithms are designed for prokariotic organisms leaving viruses out of the design. Viruses are a seriuos threath to human health
-CoCoNet uses deep leaning to model co-ocurrence of contigs from the same viral genome. The method uses a neural network which returns the probability for a pair of contigs comming  from the same genome, this probabilities are employed to construct bins representing the species present in the sample. The network was optimized for diverse viral metagenomes, the network learns to model coverage variability within samples, a critical feature in viral metagenomes where DNA amplification methods are needed to increase input genetic material.
-VirBin clusters contigs for genome reconstruction of viral strains, different strains within viral species may show different biological properties such as transmissibility or virulence. Composition based features are ussually are not enough to separate haplotypes, VirBin recieves contigs as inputs and outputs the estimated number of haplotypes via contig aligment and returns the contigs for each haplotype based on reltive abundance distribution, when the contigs are long enough VirBin produce better results.
-Pipelines for Endosymbiont organisms binning also have been recently developed. Extracting endosymbiont sequences from their host poses a similar problem as a metagenomic samples.  
-Seqdex is a tool written in R which tries to separate endosymbiont from host sequences, they proposed they could use specific features in endosymbiotic systems to better solve this problem. This tool combines partial taxonomic annotations obtained trough homology searches and sequence composition to predict the contig's organism of origin from host and its endosymbionts and helps the user to understand how effective is the classification.
 
-\section{Choosing the most appropriate binning algorithm (Classification by output)}
+Most binning algorithms are designed for prokariotic organisms leaving viruses out of the software scope. Viruses important for many reasons, thus it was not unexpected binning algorithms focusing on sequences of viral origin also have shown some progress. 
+
+CoCoNet uses deep leaning to model co-ocurrence of contigs from the same viral genome. The method uses a neural network which returns the probability for a pair of contigs coming  from the same genome, this probabilities are employed to construct bins representing the species present in the sample. The network was optimized for diverse viral metagenomes, the network learns to model coverage variability within samples, a critical feature in viral metagenomes where DNA amplification methods are needed to increase input genetic material.
+
+VirBin clusters contigs for genome reconstruction of viral strains, different strains within viral species may show different biological properties such as transmissibility or virulence. Composition based features are usually are not enough to separate haplotypes, VirBin receives contigs as inputs and outputs the estimated number of haplotypes via contig aligment and returns the contigs for each haplotype based on relative abundance distribution, when the contigs are long enough VirBin produce better results.
+
+Newer strategies has been proposed and employed to reconstruct viral genomes from metagenomic samples, in a recent work (Natfach 2021) a new compendium of 189680 DNA viruses from the human gut microbiome was produced. In this work they use viral informative features, among them are presence of viral protein families (Paez-Espino 2016), and absence of non-viral families (El Gebali 2019), gene strand switch rate (Roux 2015) and the score produced from the VirFinder(Ren et al 2017) software  
+
+\subsection{ Binning Pipelines}
+%An analysis pipeline is defined as a program that combines several programs in a defined order to complete a complex analysis.
+Other advances in binning consist in the integration of existing tools and software into bioinformatic pipelines, which  allow the automatic processing from beginning to end of read samples into bins or the addition of extra processing steps to address specific biological questions or problems related to the sample of origin.
+%nf-core MAG,
+%MetaWRAP
+%MAGO
+%Autometa
+
+MetaWRAP is a modular pipeline ready to perform common tasks in metagenomic analysis, starting from read quality checks up to bin creation, refinement, reassembly quantification, taxonomic annotation and functional annotation.
+MAGO pipeline integrates metagenome assembly, binning, bin improvement, bin quality check, bin functional annotation, and bin taxonomic annotation. 
+SqueezeMeta also integrates external software to perform the complete analysis of metagenomic samples from sequences reading to MAG construction and annotation.%Binning refiner
+nf-coreMAG supports both short and long reads, performs quality and adapter trimming, quality check,  performs assembly, binning, checks bin quality  and assigns taxonomy.
+Autometa was developed to deal with non-model Eukariotic host contamination and complex single metagenomes, the application integrate sequence homology, nucleotide composition, coverage and single-copy marker genes to separate microbial genomes from non model host genomes. 
+Seqdex is a tool written in R which tries to separate endosymbionts from their host sequences, they propose the use specific features in endosymbiotic systems to better solve this problem. This tool combines partial taxonomic annotations obtained trough homology searches and sequence composition to predict the contig's organism of origin from host and its endosymbionts and helps the user to understand how effective is the classification.
+
+Among pipelines benefits we can mention they ease the reproducibility and scalability of metagenomic analysis, and allow people with little computational experience to perform complete analysis in less time.
+
+\section{Choosing a binning algorithm (Classification by output)}
 %Figure. Decision tree, overview of metagenomic binning 
 \begin{sidewaystable}
 \begin{tiny}
@@ -131,32 +155,35 @@ Seqdex is a tool written in R which tries to separate endosymbiont from host seq
 
 A review on the benchmarking binning algorithms was done by \citeNP{yue2020evaluating}.
 Resource management is an important factor in the choice of binning algorithm.
-The tradeoff between number of \glspl{CPU}, memory, and time are important considerations.
+The trade off between number of \glspl{CPU}, memory, and time are important considerations.
 Newer advances in pipeline technologies have ameliorated these costs.
 An analysis pipeline is defined as a program that combines several programs in a defined order to complete a complex analysis.
 Improperly developed, validated, and/or monitored pipelines may generate inaccurate results.
 \subsection{Identify start point variables} 
 %Sample origin (Host contamination, diversity)
-%Number of samples (some tools require many samples to perform well)
+%Number of samples (some tools require many samples to perform well), CoMet employed for a single metagenomic sample
 %Sequencing technology (Most tools employ illumina, LongReads are increasing)
 %Computational resources available
 
 \subsection{Identify endpoint}
 %organism of interest viral(ref viral catalogue), bacteria, all
-\subsection{Tools that are complementary} 
+%\subsection{Tools that are complementary} 
 %MSP/Metabat
 
 \section{Conclusion}
+%summary of recent developments in binning algorithms, 
 %Current limitations and future directions
 %Do not perform well on multiple strains, on the same sample 
-Until now binning methods perform poorly in samples that contain similar strains. Also do not perfor great assignning 16S sequences to bins maybe due to high copy number within a genome.
-Binning has been focused mainly in prokariotic organisms. Binning of organisms outside prokatiotes need more development, lately some advances have been observed in viral genomes  (cite viral catalogue and viral binning organims) but the huge diveristy in viral genomes still poses a challenge for currrent methodologies. eukariotic microscopic organisms does not appear in the current picture. 
-The continouisly increasing number of sequences available require more efficient/faster algorithms and new strategies to recontruct single organisms from enviromental samples.
+Until now binning methods perform poorly in samples that contain similar strains. Also do not perform great assigning 16S sequences to bins maybe due to high copy number of these sequences within a genome.
+Binning has been focused mainly in prokariotic organisms. Binning of organisms outside prokariotes need more development, lately some advances have been observed in viral genomes  (cite viral catalogue and viral binning organims) but the huge diversity in viral genomes still poses a challenge for current methodologies. Eukariotic microscopic organisms does not appear in the current picture. 
+The continuously increasing number of sequences available require more efficient/faster algorithms and new strategies to reconstruct single organisms from environmental samples.
+New sources of experimental information might add up into solving the binning central problem.
+
 Delvelopment of Machine learning algorithms have started in the field and we expect to see more development soon
-New and open areas of research in which the application of metagenomic pipelines are relevant
-The increased impact of machine learning in analysis
+
+%New and open areas of research in which the application of metagenomic pipelines are relevant
+% ssThe increased impact of machine learning in analysis
 Short section - just for past-present-future completeness
-Future developments for metagenomic analysis
 
 \bibliography{library}
 \end{document}

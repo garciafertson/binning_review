@@ -1,0 +1,43 @@
+Abstract
+Background/Introduction
+	Binning problem definition	(recover biological entities from metagenomic sequencing)
+		problem relevance	(Explosion in metagenomics, reduction in sequencing cost, increased computer capacity)
+	Review objectives	(Brief summary on popular tools, overview of innovations of recent tools)
+
+Popular/Previous Binning software
+		Proposed solutions	(bin contings into bins(MAG if good quality) based on their kmer composition and abundance/coabundance)
+		Tools available	(Cite recent benchmark)
+	Review objectives	(Overview of recent software, )
+
+Overview of recent metagenomic binning tools
+	Inovations in binning tools
+		Inovations in proposed solutions/ strategy innovations
+			Read binning
+			gene-abundance binning
+				CAG, MGS, MSP
+			Integrate new experimental data
+		Software/algorithms innovations
+			machine-learning/deep-learning implementations
+	Inovations in specific biological questions
+		Viral genomes and viral strains
+		Endosymbionts
+		
+Choosing a binning algorithm
+	Identifiy start point variables
+		Sample origin (Host contamination, diversity)
+		Number of samples (some tools require many samples to perform well)
+		Sequencing technology (Most tools employ illumina, LongReads are increasing)
+		Computational resources available
+	Identify endpoint
+		organism of interest viral(ref viral catalogue), bacteria, all
+
+	Tools are complementary MSP/Metabat
+
+Conclusions
+	Current limitations and future directions
+		Do not perform well on multiple strains, on the same sample
+
+Figure. Binning software historical citations barplot
+Figure. Decision tree, overview of metagenomic binning
+Table. List of binning software since 2017
+
