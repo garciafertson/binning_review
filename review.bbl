@@ -1,65 +1,61 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
-Arisdakessian%
-, Nigro%
-, Steward%
-, Poisson%
-\BCBL {}\ \BBA {} Belcaid%
+Karypis%
+, Han%
+\BCBL {}\ \BBA {} Kumar%
 }{%
-Arisdakessian%
+Karypis%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {2021}}%
+{\protect \APACyear {1999}}%
 }]{%
-arisdakessian2021coconet}
+karypis1999chameleon}
 \APACinsertmetastar {%
-arisdakessian2021coconet}%
+karypis1999chameleon}%
 \begin{APACrefauthors}%
-Arisdakessian, C\BPBI G.%
-, Nigro, O\BPBI D.%
-, Steward, G\BPBI F.%
-, Poisson, G.%
-\BCBL {}\ \BBA {} Belcaid, M.%
+Karypis, G.%
+, Han, E\BHBI H.%
+\BCBL {}\ \BBA {} Kumar, V.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2021}{}{}.
+\APACrefYearMonthDay{1999}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {CoCoNet: an efficient deep learning tool for viral
-  metagenome binning} {Coconet: an efficient deep learning tool for viral
-  metagenome binning}.{\BBCQ}
+{\BBOQ}\APACrefatitle {Chameleon: Hierarchical clustering using dynamic
+  modeling} {Chameleon: Hierarchical clustering using dynamic modeling}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Bioinformatics}{}{}{}.
+\APACjournalVolNumPages{Computer}{32}{8}{68--75}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Nissen%
+Plaza~O{\~n}ate%
 \ \protect \BOthers {.}}{%
-Nissen%
+Plaza~O{\~n}ate%
 \ \protect \BOthers {.}}{%
-{\protect \APACyear {{\protect \bibnodate {}}}}%
+{\protect \APACyear {2019}}%
 }]{%
-nissenimproved}
+plaza2019mspminer}
 \APACinsertmetastar {%
-nissenimproved}%
+plaza2019mspminer}%
 \begin{APACrefauthors}%
-Nissen, J\BPBI N.%
-, Johansen, J.%
-, Alles{\o}e, R\BPBI L.%
-, S{\o}nderby, C\BPBI K.%
-, Armenteros, J\BPBI J\BPBI A.%
-, Gr{\o}nbech, C\BPBI H.%
-\BDBL {}others%
+Plaza~O{\~n}ate, F.%
+, Le~Chatelier, E.%
+, Almeida, M.%
+, Cervino, A\BPBI C.%
+, Gauthier, F.%
+, Magoul{\`e}s, F.%
+\BDBL {}Pichaud, M.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\APACrefYearMonthDay{2019}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {Improved metagenome binning and assembly using deep
-  variational autoencoders} {Improved metagenome binning and assembly using
-  deep variational autoencoders}.{\BBCQ}
+{\BBOQ}\APACrefatitle {MSPminer: abundance-based reconstitution of microbial
+  pan-genomes from shotgun metagenomic data} {Mspminer: abundance-based
+  reconstitution of microbial pan-genomes from shotgun metagenomic
+  data}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{Nature Biotechnology}{}{}{1--6}.
+\APACjournalVolNumPages{Bioinformatics}{35}{9}{1544--1552}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
