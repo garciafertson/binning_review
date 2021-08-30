@@ -46,11 +46,8 @@ This review serves as a guide to direct the researcher to the binning algorithm 
 \end{figure}
 
 \section{Background}
-%Binning problem definition (recover biological entities from metagenomic sequencing)
-%problem relevance (Explosion in metagenomics, reduction in sequencing cost, increased computer capacity)
-%Review objectives (Brief summary on popular tools, innovations overview of recent tools)
 The explosion in popularity and success in the field of metagenomics over the last 25 years can be largely attributed to the advances in computing technologies.
-An example of the outcomes of this can be found in the Human Microbiome Project; a project that has been greatly improved the understanding of the microbila flora involved in human health and disease.
+An example of the outcomes of this can be found in the Human Microbiome Project; a project that has been greatly improved the understanding of the microbila flora involved in human health and disease \cite{turnbaugh2007human}.
 These advances have brought with them greater demands for storage, CPU time, and consequently more efficient algorithms.
 The main function of binning tools is to reconstruct species/biological entities from metagenomic samples.  
 Compared to amplicon, shotgun metagenome can provide functional gene profiles directly and reach a much higher resolution of taxonomic annotation.
@@ -58,38 +55,28 @@ However, due to the high demands on computational resources, cost, and expertise
 As the cost of sequencing is rapidly falling, this burden has been significantly lessened.
 Whole Genome Shotgun sequences does not require cultivation.
 At the time of writing, shotgun metagenomic sequencing costs on average three times as much as 16S sequencing in comparison.
-%The objectives of this review is for the reader to be better informed about the latest algorithms (since 2017) for binning metagenomic samples.
-%The second part of this review is for the reader to be informed about distinguishing factors between the methods.
-%The last part is for the reader to make an informed decision based on those factors for their needs.
-%This review will be broken down into the following sections:
 Here we will briefly recapitulate recent binning algorithms and highlight some of the developments in the field, among them, the use of new algorithms and strategies employed to achieve the goal of identifying the organisms composing microbiome communities.
 We hope this overview could aid the reader to choose a binning algorithm or a combination of them based on their specific needs.
 
 \section{Overview of recent methods for metagenomic binning}
 \subsection{Progress in recent binning strategies}
-%Proposed solutions (bin contings into bins(MAG if good quality) based on their kmer composition and abundance/coabundance)
-%Tools available (Cite recent benchmark)} 
-%Read binning 
-%gene-abundance binning (CAG, MGS, MSPi)
-%Integrate new experimental data 
-%Figure. Binning software historical citations barplot 
-
+% I'm worried that these topics are not adequately introduced here
 A metagenomic sample is comprised of many organisms and the goal of binning is to reconstruct the sequences from each organism present in the original sample.
-The majority of binning tools we can find are oriented toward clustering contigs (contig-binning) into bins, which may represent the genome from a single biological entity/organism. A \gls{MAG} is a single-taxon assembly based on one or more binned metagenomes that has been asserted to be a close representation to an actual individual genome (that could match an already existing isolate or represent a novel isolate).
+The majority of binning tools are oriented toward clustering contigs (contig-binning) into bins, which may represent the genome from a single biological entity/organism.
+A \gls{MAG} is a single-taxon assembly based on one or more binned metagenomes that has been asserted to be a close representation to an actual individual genome that could match an already existing isolate or represent a novel isolate.
 
-Current contig-binning tools normally are reference free (i.e do not depend on reference sequences to perform clustering) and rely on coverage information and sequence composition.
+Current contig-binning tools are commonly reference free (i.e. they do not depend on reference sequences to perform clustering) and rely on coverage information and sequence composition.
 Progress in contig-binning algorithms can be seen in the proposals to integrate new sources of information (for example, from scaffold-graphs(Binnacle), paired-end reads(COCACOLA), or 3D contact information(MetaTOR)) and state of the art algorithms in machine learning (CoCoNet, \gls{VAMB}).
 
-We also notice the development of Bin refinement tools (DAS-tool, Binning Refiner), this tools rely on the outputs from multiple contig-binning algorithms and attempt to combine them to produce better results.
+We also notice the development of Bin refinement tools (DAS-tool, Binning Refiner) that rely on the outputs from multiple contig-binning algorithms and combine them to produce better results \cite{sieber2018recovery}.
 
-Binning of contigs have played a central role in software development in the field, a review on the benchmarking binning algorithms was done by \citeNP{yue2020evaluating}. 
-%Currently we can distinguish from 3 different stategies in binning algorithms, read binning, contig binning, and gene binning.
+Binning of contigs have played a central role in software development in the field, a review on the benchmarking of binning algorithms was done by \citeNP{yue2020evaluating}. 
 
 Beside contig-binning tools we can also distinguish read-binning tools and co-abundant-gene-binning tools.
 
-The main purpose of read-binning tools is to pre-process reads into clusters for a posterior targeted assembly, here we find reference-free and non-reference-free tools, and tools designed for short-read or long-read sequencing technologies. Among the binning tools developed in recent years a subset of them are dedicated to cluster reads (read-binning) (MetaBBC-LR, BioBloom Tools, CLAME, LVQ-KKN, Meta VW, HirBin, MEGAN-LR).
+The main purpose of read-binning tools is to pre-process reads into clusters for a posterior targeted assembly, here we find reference-free and non-reference-free tools, and tools designed for short-read or long-read sequencing technologies.
+Among the binning tools developed in recent years a subset of them are dedicated to cluster reads (read-binning) (MetaBBC-LR, BioBloom Tools, CLAME, LVQ-KKN, Meta VW, HirBin, MEGAN-LR).
 
-%\subsubsection{Metagenome Assembled Genomes}
 \subsubsection{Binning co-abundant genes}
 Binning of co-abundant genes represents an alternative proposal to reconstruct species/biological entities from a set of metagenomic samples.
 Co-abundant gene binning methods assume each gene coming from a shared chromosome will display proportional abundances across samples, if you have enough samples from a similar environment you can identify the sets of genes from a common organism of origin (MLGs Chameleon-clust 2012, CAGs and MGSs Canopy 2014, Markovclust-MGCs Karlsson 2013, MSPs MSPminner 2018) \cite{karypis1999chameleon, plaza2019mspminer}.
