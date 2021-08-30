@@ -162,33 +162,35 @@ Among pipelines benefits we can mention they ease the reproducibility and scalab
 \label{Tbinningsoftware}
 \end{tiny}
 \end{sidewaystable}
+A number of aspects should be considered when performing binning analysis on metagenomic samples, among them we can mention the computational resources available, the sequencing technology, the number of samples and the sample's source.
+Some tools employ more resources than others, and some perform better under specific circumstances, a review on the benchmarking contig-binning algorithms was done by \citeNP{yue2020evaluating}.
+If you are dealing with a large number of samples a gene-binning strategy could be taken into consideration, tools like CoMet were built around single sample binning. Long read sequence technology is gaining momentum and some tools also integrate the characteristic features generated under this technology.
+The environment under study also play an important role for binning, sometimes there exists host organisms whose genome sequences would be removed before starting the analysis. The environment also has a profound effect on the sample's diversity, higher diversity need more sequencing depth and are harder to bin. It is also difficult for binning tools to discern between similar strains within the same sampe.  
+It is also worth mentioning that most of the available tools are not mutually exclusive and it is possible to benefit from the advantages each one has to offer and merge results depending of the aim of the study.
+Besides binning, other types of metagenomic analysis can be performed on microbiomes, recent reviews provide an overview of the complete process and practical guides to apply available software.  
 
-A review on the benchmarking binning algorithms was done by \citeNP{yue2020evaluating}.
 %Resource management is an important factor in the choice of binning algorithm.
 %The trade off between number of \glspl{CPU}, memory, and time are important considerations.
+%Computational resources available
 %Newer advances in pipeline technologies have ameliorated these costs.
-%An analysis pipeline is defined as a program that combines several programs in a defined order to complete a complex analysis.
-%Improperly developed, validated, and/or monitored pipelines may generate inaccurate results.
 %\subsection{Identify start point variables} 
 %Sample origin (Host contamination, diversity)
 %Number of samples (some tools require many samples to perform well), CoMet employed for a single metagenomic sample
 %Sequencing technology (Most tools employ illumina, LongReads are increasing)
-%Computational resources available
-%Current limitations and future directions
-%\subsection{Identify endpoint}
 %organism of interest viral(ref viral catalogue), bacteria, all
-%\subsection{Tools that are complementary} 
+%\subsection{Identify endpoint}
 %MSP/Metabat
 
 \section{Conclusion}
 %summary of recent developments in binning algorithms, 
 %Do not perform well on multiple strains, on the same sample 
+%Current limitations and future directions
 Until now binning methods perform poorly in samples that contain similar strains. Also do not perform great assigning 16S sequences to bins maybe due to high copy number of these sequences within a genome.
 Binning has been focused mainly in prokariotic organisms. Binning of organisms outside prokariotes need more development, lately some advances have been observed in viral genomes  (cite viral catalogue and viral binning organims) but the huge diversity in viral genomes still poses a challenge for current methodologies. Eukariotic microscopic organisms does not appear in the current picture. 
+
 The continuously increasing number of sequences available require more efficient/faster algorithms and new strategies to reconstruct single organisms from environmental samples.
 New sources of experimental information might add up into solving the binning central problem.
-
-Delvelopment of Machine learning algorithms have started in the field and we expect to see more development soon
+Development of Machine learning algorithms have started in the field and we expect to see more development soon
 
 %New and open areas of research in which the application of metagenomic pipelines are relevant
 % ssThe increased impact of machine learning in analysis
