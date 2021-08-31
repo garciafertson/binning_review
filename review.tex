@@ -70,7 +70,7 @@ Binning of contigs have played a central role in software development in the fie
 Beside contig-binning tools we can also distinguish read-binning tools and co-abundant-gene-binning tools.
 The main purpose of read-binning tools is to pre-process reads into clusters for a posterior targeted assembly.
 Here we find reference-free and non-reference-free tools, and tools designed for short-read or long-read sequencing technologies.
-Among the binning tools developed in recent years, a subset of them are dedicated to cluster reads (read-binning) (MetaBBC-LR, BioBloom Tools, CLAME, LVQ-KKN, Meta VW, HirBin, MEGAN-LR).
+Among the binning tools developed in recent years, a subset of them are dedicated to cluster reads (read-binning) (MetaBBC-LR, BioBloom Tools, CLAME, LVQ-KNN, Meta VW, HirBin, MEGAN-LR) \cite{wickramarachchi2020metabcc, chu2014biobloom, benavides2018clame, belka2018lvq, vervier2016large, osterlund2017hirbin, huson2018megan}.
 
 \subsubsection{Binning co-abundant genes}
 Binning of co-abundant genes represents an alternative proposal to reconstruct species/biological entities from a set of metagenomic samples.
@@ -142,18 +142,18 @@ The environment under study also play an important role for binning.
 Sometimes there exists host organisms whose genome sequences would be removed before starting the analysis.
 The environment also has a profound effect on the sample's diversity with samples that have greater diversity requiring greater sequencing depth making binning more difficult.
 It is also difficult for binning tools to discern between similar strains within the same sample.  
-It is also worth mentioning that most of the available tools are not mutually exclusive and it is possible to benefit from the advantages each one has to offer and merge results depending of the aim of the study.
+It is also worth mentioning that there is no mutual exclusivity between the currently available tools and it is possible to benefit from the relative advantages each has to offer and merge the results depending of the aim of the study.
 Besides binning, other types of metagenomic analysis can be performed on microbiomes.
-Recent reviews provide an overview of the complete process and practical guides to apply available software.  
+Recent reviews provide an overview of the complete process and practical guides to apply available software \cite{breitwieser2019review}.  
 
 \section{Conclusion}
 Popularity and successes of metagenomic binning have accelerated in the last ten years.
 Current limitations that still remain include the difficulty in classifying similar strains within samples.
 They additionally do not perform well assigning 16S sequences to bins likely due to the high copy number of these sequences within a genome.
 As binning has been focused mainly in prokariotic organisms, binning of organisms outside prokariotes need more development.
-Lately some advances have been observed in viral genomes \cite{nayfach2021metagenomic} but the huge diversity in viral genomes still poses a challenge for current methodologies.
+Although there have been signifiance advances in the characterisation of viral genomes as of late \cite{nayfach2021metagenomic}, the huge diversity in viral genomes still poses a challenge for current methodologies.
 The continuously increasing number of sequences available require more efficient/faster algorithms and new strategies to reconstruct single organisms from environmental samples.
-However, with the breakneck pace of technological advancements in computing resources, this requirement is sure to be met and will lead to greater insights into the microbial world.
+However, with the breakneck pace of technological advancements in computing resources, this requirement is sure to be met and will pave the way for greater insights into the microbial world.
 With the integration of Machine learning algorithms into binning, we expect to see significant developments in the near future.
 
 \bibliography{library}

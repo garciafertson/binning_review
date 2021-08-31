@@ -33,6 +33,161 @@ Arisdakessian, C\BPBI G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Belka%
+, Fischer%
+, Pohlmann%
+, Beer%
+\BCBL {}\ \BBA {} H{\"o}per%
+}{%
+Belka%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+belka2018lvq}
+\APACinsertmetastar {%
+belka2018lvq}%
+\begin{APACrefauthors}%
+Belka, A.%
+, Fischer, M.%
+, Pohlmann, A.%
+, Beer, M.%
+\BCBL {}\ \BBA {} H{\"o}per, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {LVQ-KNN: Composition-based DNA/RNA binning of short
+  nucleotide sequences utilizing a prototype-based k-nearest neighbor approach}
+  {Lvq-knn: Composition-based dna/rna binning of short nucleotide sequences
+  utilizing a prototype-based k-nearest neighbor approach}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Virus research}{258}{}{55--63}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Benavides%
+, Isaza%
+, Ni{\~n}o-Garc{\'\i}a%
+, Alzate%
+\BCBL {}\ \BBA {} Cabarcas%
+}{%
+Benavides%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+benavides2018clame}
+\APACinsertmetastar {%
+benavides2018clame}%
+\begin{APACrefauthors}%
+Benavides, A.%
+, Isaza, J\BPBI P.%
+, Ni{\~n}o-Garc{\'\i}a, J\BPBI P.%
+, Alzate, J\BPBI F.%
+\BCBL {}\ \BBA {} Cabarcas, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {CLAME: a new alignment-based binning algorithm allows
+  the genomic description of a novel Xanthomonadaceae from the Colombian Andes}
+  {Clame: a new alignment-based binning algorithm allows the genomic
+  description of a novel xanthomonadaceae from the colombian andes}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{BMC genomics}{19}{8}{9--30}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Breitwieser%
+, Lu%
+\BCBL {}\ \BBA {} Salzberg%
+}{%
+Breitwieser%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+breitwieser2019review}
+\APACinsertmetastar {%
+breitwieser2019review}%
+\begin{APACrefauthors}%
+Breitwieser, F\BPBI P.%
+, Lu, J.%
+\BCBL {}\ \BBA {} Salzberg, S\BPBI L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A review of methods and databases for metagenomic
+  classification and assembly} {A review of methods and databases for
+  metagenomic classification and assembly}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Briefings in bioinformatics}{20}{4}{1125--1136}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chiodi%
+\ \protect \BOthers {.}}{%
+Chiodi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+chiodi2019seqdechi}
+\APACinsertmetastar {%
+chiodi2019seqdechi}%
+\begin{APACrefauthors}%
+Chiodi, A.%
+, Comandatore, F.%
+, Sassera, D.%
+, Petroni, G.%
+, Bandi, C.%
+\BCBL {}\ \BBA {} Brilli, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {SeqDe$\chi$: a sequence deconvolution tool for genome
+  separation of endosymbionts from mixed sequencing samples} {Seqde$\chi$: a
+  sequence deconvolution tool for genome separation of endosymbionts from mixed
+  sequencing samples}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Frontiers in genetics}{10}{}{853}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chu%
+\ \protect \BOthers {.}}{%
+Chu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+chu2014biobloom}
+\APACinsertmetastar {%
+chu2014biobloom}%
+\begin{APACrefauthors}%
+Chu, J.%
+, Sadeghi, S.%
+, Raymond, A.%
+, Jackman, S\BPBI D.%
+, Nip, K\BPBI M.%
+, Mar, R.%
+\BDBL {}Birol, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {BioBloom tools: fast, accurate and memory-efficient host
+  species sequence screening using bloom filters} {Biobloom tools: fast,
+  accurate and memory-efficient host species sequence screening using bloom
+  filters}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bioinformatics}{30}{23}{3402--3404}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 El-Gebali%
 \ \protect \BOthers {.}}{%
 El-Gebali%
@@ -92,6 +247,70 @@ Ewels, P\BPBI A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Herath%
+, Tang%
+, Tandon%
+, Ackland%
+\BCBL {}\ \BBA {} Halgamuge%
+}{%
+Herath%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+herath2017comet}
+\APACinsertmetastar {%
+herath2017comet}%
+\begin{APACrefauthors}%
+Herath, D.%
+, Tang, S\BHBI L.%
+, Tandon, K.%
+, Ackland, D.%
+\BCBL {}\ \BBA {} Halgamuge, S\BPBI K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {CoMet: a workflow using contig coverage and composition
+  for binning a metagenomic sample with high precision} {Comet: a workflow
+  using contig coverage and composition for binning a metagenomic sample with
+  high precision}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{BMC bioinformatics}{18}{16}{161--172}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Huson%
+\ \protect \BOthers {.}}{%
+Huson%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+huson2018megan}
+\APACinsertmetastar {%
+huson2018megan}%
+\begin{APACrefauthors}%
+Huson, D\BPBI H.%
+, Albrecht, B.%
+, Ba{\u{g}}c{\i}, C.%
+, Bessarab, I.%
+, Gorska, A.%
+, Jolic, D.%
+\BCBL {}\ \BBA {} Williams, R\BPBI B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {MEGAN-LR: new algorithms allow accurate binning and easy
+  interactive exploration of metagenomic long reads and contigs} {Megan-lr: new
+  algorithms allow accurate binning and easy interactive exploration of
+  metagenomic long reads and contigs}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Biology direct}{13}{1}{1--17}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Karypis%
 , Han%
 \BCBL {}\ \BBA {} Kumar%
@@ -116,6 +335,36 @@ Karypis, G.%
   modeling} {Chameleon: Hierarchical clustering using dynamic modeling}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Computer}{32}{8}{68--75}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Miller%
+\ \protect \BOthers {.}}{%
+Miller%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+miller2019autometa}
+\APACinsertmetastar {%
+miller2019autometa}%
+\begin{APACrefauthors}%
+Miller, I\BPBI J.%
+, Rees, E\BPBI R.%
+, Ross, J.%
+, Miller, I.%
+, Baxa, J.%
+, Lopera, J.%
+\BDBL {}Kwan, J\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Autometa: automated extraction of microbial genomes from
+  individual shotgun metagenomes} {Autometa: automated extraction of microbial
+  genomes from individual shotgun metagenomes}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nucleic acids research}{47}{10}{e57--e57}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -176,6 +425,34 @@ Nissen, J\BPBI N.%
   deep variational autoencoders}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Nature Biotechnology}{}{}{1--6}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{\"O}sterlund%
+, Jonsson%
+\BCBL {}\ \BBA {} Kristiansson%
+}{%
+{\"O}sterlund%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+osterlund2017hirbin}
+\APACinsertmetastar {%
+osterlund2017hirbin}%
+\begin{APACrefauthors}%
+{\"O}sterlund, T.%
+, Jonsson, V.%
+\BCBL {}\ \BBA {} Kristiansson, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {HirBin: high-resolution identification of differentially
+  abundant functions in metagenomes} {Hirbin: high-resolution identification of
+  differentially abundant functions in metagenomes}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{BMC genomics}{18}{1}{1--11}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -302,6 +579,33 @@ Sieber, C\BPBI M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Tamames%
+\ \BBA {} Puente-S{\'a}nchez%
+}{%
+Tamames%
+\ \BBA {} Puente-S{\'a}nchez%
+}{%
+{\protect \APACyear {2019}}%
+}]{%
+tamames2019squeezemeta}
+\APACinsertmetastar {%
+tamames2019squeezemeta}%
+\begin{APACrefauthors}%
+Tamames, J.%
+\BCBT {}\ \BBA {} Puente-S{\'a}nchez, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {SqueezeMeta, a highly portable, fully automatic
+  metagenomic analysis pipeline} {Squeezemeta, a highly portable, fully
+  automatic metagenomic analysis pipeline}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Frontiers in microbiology}{9}{}{3349}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Tettelin%
 \ \protect \BOthers {.}}{%
 Tettelin%
@@ -359,6 +663,68 @@ Turnbaugh, P\BPBI J.%
   project}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Nature}{449}{7164}{804--810}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Vervier%
+, Mah{\'e}%
+, Tournoud%
+, Veyrieras%
+\BCBL {}\ \BBA {} Vert%
+}{%
+Vervier%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+vervier2016large}
+\APACinsertmetastar {%
+vervier2016large}%
+\begin{APACrefauthors}%
+Vervier, K.%
+, Mah{\'e}, P.%
+, Tournoud, M.%
+, Veyrieras, J\BHBI B.%
+\BCBL {}\ \BBA {} Vert, J\BHBI P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Large-scale machine learning for metagenomics sequence
+  classification} {Large-scale machine learning for metagenomics sequence
+  classification}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bioinformatics}{32}{7}{1023--1032}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wickramarachchi%
+, Mallawaarachchi%
+, Rajan%
+\BCBL {}\ \BBA {} Lin%
+}{%
+Wickramarachchi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+wickramarachchi2020metabcc}
+\APACinsertmetastar {%
+wickramarachchi2020metabcc}%
+\begin{APACrefauthors}%
+Wickramarachchi, A.%
+, Mallawaarachchi, V.%
+, Rajan, V.%
+\BCBL {}\ \BBA {} Lin, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {MetaBCC-LR: meta genomics b inning by c overage and c
+  omposition for l ong r eads} {Metabcc-lr: meta genomics b inning by c overage
+  and c omposition for l ong r eads}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bioinformatics}{36}{Supplement\_1}{i3--i11}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
