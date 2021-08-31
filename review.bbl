@@ -1,6 +1,97 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Arisdakessian%
+, Nigro%
+, Steward%
+, Poisson%
+\BCBL {}\ \BBA {} Belcaid%
+}{%
+Arisdakessian%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+arisdakessian2021coconet}
+\APACinsertmetastar {%
+arisdakessian2021coconet}%
+\begin{APACrefauthors}%
+Arisdakessian, C\BPBI G.%
+, Nigro, O\BPBI D.%
+, Steward, G\BPBI F.%
+, Poisson, G.%
+\BCBL {}\ \BBA {} Belcaid, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {CoCoNet: an efficient deep learning tool for viral
+  metagenome binning} {Coconet: an efficient deep learning tool for viral
+  metagenome binning}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Bioinformatics}{}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+El-Gebali%
+\ \protect \BOthers {.}}{%
+El-Gebali%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+el2019pfam}
+\APACinsertmetastar {%
+el2019pfam}%
+\begin{APACrefauthors}%
+El-Gebali, S.%
+, Mistry, J.%
+, Bateman, A.%
+, Eddy, S\BPBI R.%
+, Luciani, A.%
+, Potter, S\BPBI C.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The Pfam protein families database in 2019} {The pfam
+  protein families database in 2019}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nucleic acids research}{47}{D1}{D427--D432}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ewels%
+\ \protect \BOthers {.}}{%
+Ewels%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+ewels2020nf}
+\APACinsertmetastar {%
+ewels2020nf}%
+\begin{APACrefauthors}%
+Ewels, P\BPBI A.%
+, Peltzer, A.%
+, Fillinger, S.%
+, Patel, H.%
+, Alneberg, J.%
+, Wilm, A.%
+\BDBL {}Nahnsen, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The nf-core framework for community-curated
+  bioinformatics pipelines} {The nf-core framework for community-curated
+  bioinformatics pipelines}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature biotechnology}{38}{3}{276--278}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Karypis%
 , Han%
 \BCBL {}\ \BBA {} Kumar%
@@ -25,6 +116,95 @@ Karypis, G.%
   modeling} {Chameleon: Hierarchical clustering using dynamic modeling}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Computer}{32}{8}{68--75}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nayfach%
+\ \protect \BOthers {.}}{%
+Nayfach%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+nayfach2021metagenomic}
+\APACinsertmetastar {%
+nayfach2021metagenomic}%
+\begin{APACrefauthors}%
+Nayfach, S.%
+, P{\'a}ez-Espino, D.%
+, Call, L.%
+, Low, S\BPBI J.%
+, Sberro, H.%
+, Ivanova, N\BPBI N.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Metagenomic compendium of 189,680 DNA viruses from the
+  human gut microbiome} {Metagenomic compendium of 189,680 dna viruses from the
+  human gut microbiome}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature Microbiology}{}{}{1--11}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nissen%
+\ \protect \BOthers {.}}{%
+Nissen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+nissenimproved}
+\APACinsertmetastar {%
+nissenimproved}%
+\begin{APACrefauthors}%
+Nissen, J\BPBI N.%
+, Johansen, J.%
+, Alles{\o}e, R\BPBI L.%
+, S{\o}nderby, C\BPBI K.%
+, Armenteros, J\BPBI J\BPBI A.%
+, Gr{\o}nbech, C\BPBI H.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Improved metagenome binning and assembly using deep
+  variational autoencoders} {Improved metagenome binning and assembly using
+  deep variational autoencoders}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature Biotechnology}{}{}{1--6}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Paez-Espino%
+\ \protect \BOthers {.}}{%
+Paez-Espino%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2016}}%
+}]{%
+paez2016uncovering}
+\APACinsertmetastar {%
+paez2016uncovering}%
+\begin{APACrefauthors}%
+Paez-Espino, D.%
+, Eloe-Fadrosh, E\BPBI A.%
+, Pavlopoulos, G\BPBI A.%
+, Thomas, A\BPBI D.%
+, Huntemann, M.%
+, Mikhailova, N.%
+\BDBL {}Kyrpides, N\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2016}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Uncovering Earth’s virome} {Uncovering earth’s
+  virome}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature}{536}{7617}{425--430}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -56,6 +236,129 @@ Plaza~O{\~n}ate, F.%
   data}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Bioinformatics}{35}{9}{1544--1552}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ren%
+, Ahlgren%
+, Lu%
+, Fuhrman%
+\BCBL {}\ \BBA {} Sun%
+}{%
+Ren%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+ren2017virfinder}
+\APACinsertmetastar {%
+ren2017virfinder}%
+\begin{APACrefauthors}%
+Ren, J.%
+, Ahlgren, N\BPBI A.%
+, Lu, Y\BPBI Y.%
+, Fuhrman, J\BPBI A.%
+\BCBL {}\ \BBA {} Sun, F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {VirFinder: a novel k-mer based tool for identifying
+  viral sequences from assembled metagenomic data} {Virfinder: a novel k-mer
+  based tool for identifying viral sequences from assembled metagenomic
+  data}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Microbiome}{5}{1}{1--20}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sieber%
+\ \protect \BOthers {.}}{%
+Sieber%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+sieber2018recovery}
+\APACinsertmetastar {%
+sieber2018recovery}%
+\begin{APACrefauthors}%
+Sieber, C\BPBI M.%
+, Probst, A\BPBI J.%
+, Sharrar, A.%
+, Thomas, B\BPBI C.%
+, Hess, M.%
+, Tringe, S\BPBI G.%
+\BCBL {}\ \BBA {} Banfield, J\BPBI F.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Recovery of genomes from metagenomes via a
+  dereplication, aggregation and scoring strategy} {Recovery of genomes from
+  metagenomes via a dereplication, aggregation and scoring strategy}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature microbiology}{3}{7}{836--843}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tettelin%
+\ \protect \BOthers {.}}{%
+Tettelin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2005}}%
+}]{%
+tettelin2005genome}
+\APACinsertmetastar {%
+tettelin2005genome}%
+\begin{APACrefauthors}%
+Tettelin, H.%
+, Masignani, V.%
+, Cieslewicz, M\BPBI J.%
+, Donati, C.%
+, Medini, D.%
+, Ward, N\BPBI L.%
+\BDBL {}others%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2005}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Genome analysis of multiple pathogenic isolates of
+  Streptococcus agalactiae: implications for the microbial “pan-genome”}
+  {Genome analysis of multiple pathogenic isolates of streptococcus agalactiae:
+  implications for the microbial “pan-genome”}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the National Academy of
+  Sciences}{102}{39}{13950--13955}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Turnbaugh%
+\ \protect \BOthers {.}}{%
+Turnbaugh%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2007}}%
+}]{%
+turnbaugh2007human}
+\APACinsertmetastar {%
+turnbaugh2007human}%
+\begin{APACrefauthors}%
+Turnbaugh, P\BPBI J.%
+, Ley, R\BPBI E.%
+, Hamady, M.%
+, Fraser-Liggett, C\BPBI M.%
+, Knight, R.%
+\BCBL {}\ \BBA {} Gordon, J\BPBI I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {The human microbiome project} {The human microbiome
+  project}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature}{449}{7164}{804--810}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

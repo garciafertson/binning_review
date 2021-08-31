@@ -12,7 +12,7 @@ VirBin	2019	Binning viral haplotypes from assembled contigs	Viral haplotypes MAG
 MAGO (*only tool pipeline)	2019	Framework for Production and analysis of MAGs	pipeline	10.1093/molbev/msz237	31633780
 SeqDex	2019	Genome separation of Endosymbionts from mixed sequencing samples	Identification of endosymbiont	10.3389/fgene.2019.00853	31608107
 MetaTOR	2019	High quality MAGs from mammalian guts using meta3C libraries	Incorporates 3D contact information	10.3389/fgene.2019.00753	31481973
-MetaBAT 2	2019	Adatptative binning algorithm for genome reconstruction from metagenome assemblies	Eliminates manual parameter tuning from previous version	10.7717/peerj.7359	31388474
+MetaBAT (v2)	2019	Adatptative binning algorithm for genome reconstruction from metagenome assemblies	Eliminates manual parameter tuning from previous version	10.7717/peerj.7359	31388474
 MetaBMF	2019	Scalable binning algorithm for large scale metagenomic studies, for species and strain level	Employs sample X contigs cf mapped read counts	10.1093/bioinformatics/btz577	31347687
 PolyCRACKER	2019	Method for partitioning polyploid sub genomes by signatures of repetitive DNA evolution	Haplotypes for polyploid genomes	10.1186/s12864-019-5828-5	31299888
 SolidBin	2019	Improving metagenome binning with semi-supervised normalized cut		10.1093/bioinformatics/btz253	30977806
@@ -30,14 +30,13 @@ AMBER tool	2018	Assessment of Metagenome Binners		10.1093/gigascience/giy069	298
 DAS Tool	2018	Derreplication aggregation and scoring strategy	Combines several binning algorithm results	10.1038/s41564-018-0171-1	29807988
 MEGAN-LR	2018	Long Read/ contigs taxonomic binning 	Aligment of long reads against reference sequences	10.1186/s13062-018-0208-7	29678199
 CoMet	2018	Binning workflow using contain coverage and composition	Single sample, include gc content  and 4mer frequency	10.1186/s12859-017-1967-3	29297295
-?	2017	Metagenomic binning and association of plasmids with bacterial host genomes using DNA methylation	Plasmid banning at strain level using methylation barcode in single molecule sequences	10.1038/nbt.4037	29227468
 MetaGen	2017	reference-free learning with multiple metagenomic samples	Requires multiple samples	10.1186/s13059-017-1323-y	28974263
 d2sBin add onn	2017	Improved formula for calculate oligonucleotide sequence dissimilaritu	Math formula to calculate oligo sequence dissimilarity	10.1186/s12859-017-1835-1	28931373
- BusyBee Web	2017	Bootstrapped supervises binning and annotation	2d interactive scatterplots supervised binning	10.1093/nar/gkx348	28472498
-ICoVer	2017	Interactive visualisation tool for verification and refinement of metagenomic bins	Interactive visualisation tool	"10.1186/s12859-017-1653-5"""	28464793
+BusyBee Web	2017	Bootstrapped supervises binning and annotation	2d interactive scatterplots supervised binning	10.1093/nar/gkx348	28472498
+ICoVer	2017	Interactive visualisation tool for verification and refinement of metagenomic bins	Interactive visualisation tool	10.1186/s12859-017-1653-5	28464793
 HirBin*	2017	High resolution identification of differentially abundant functions in metagenomes	Supervised annotation, unsupervised clustering into function bins	10.1186/s12864-017-3686-6	28431529
 BinSanity	2017	Unsupervised clustering using coverage and affinity propagation	Reduce bias for high/low abundance 	10.7717/peerj.3035	28289564
 Binning_refinner	2017	Improve genome bins through the combination of different binning algorithms	Combination of different binning algorithms	10.1093/bioinformatics/btx086	28186226
 IFCM add on	2016	Improved binning using Fuzzy C-Means Method	Add estimated distribution of real genome lengths	10.1109/TCBB.2016.2576452	27295684
 COCACOLA	2016	binning contigs using composition, read coverage, co-aligment and paired end read linkage	Adds paired end read and coaligment information	10.1093/bioinformatics/btw290	27256312
-GroopM (2)	2014 	Tool for automatic recovery of population genomes from related metagenomes	Adds differential coverage to complement composition based binning	10.7717/peerj.603	25289188
+GroopM (v2)	2014 	Tool for automatic recovery of population genomes from related metagenomes	Adds differential coverage to complement composition based binning	10.7717/peerj.603	25289188
