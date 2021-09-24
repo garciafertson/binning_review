@@ -76,9 +76,9 @@ Here we will briefly recapitulate recent binning algorithms and highlight some o
 A metagenomic sample is comprised of many organisms and the goal of binning is to reconstruct the sequences from each organism present in the original sample.
 The majority of binning tools are oriented toward clustering contigs (contig-binning) into bins, which may represent the genome from a single biological entity/organism.
 A \gls{MAG} is a single-taxon assembly based on one or more binned metagenomes that has been asserted to be a close representation to an individual genome that could match an already existing isolate or represent a novel isolate.
-Current contig-binning tools are commonly reference free (i.e. they do not depend on reference sequences to perform clustering) and rely on coverage information and sequence composition (listed in  \autoref{Tbinningsoftware}).
-Progress in contig-binning algorithms can be seen in the proposals to integrate new sources of information (for example, from scaffold-graphs (Binnacle), paired-end reads (COCACOLA), or 3D contact information (MetaTOR)) and state of the art algorithms in machine learning (CoCoNet, VAMB).
-We also notice the development of Bin refinement tools (DAS-tool, Binning Refiner) that rely on the outputs from multiple contig-binning algorithms and combine them to produce better results \cite{sieber2018recovery}.
+Current contig-binning tools are commonly reference free (i.e. they do not depend on reference sequences to perform clustering) and rely on coverage information and sequence composition (listed in \autoref{Tbinningsoftware}).
+Progress in contig-binning algorithms can be seen in the proposals to integrate new sources of information (for example, from scaffold-graphs (Binnacle \cite{Muralidharah2021binnacle}), paired-end reads (COCACOLA) \cite{Lu2016COCACOLA}, or 3D contact information (MetaTOR) \cite{Baudry2019Metator}) and state of the art algorithms in machine learning (CoCoNet, VAMB) \cite{nissenimproved, arisdakessian2021coconet}.
+We also notice the development of Bin refinement tools (DAS-tool, Binning Refiner) that rely on the outputs from multiple contig-binning algorithms and combine them to produce better results \cite{Song2017Binningrefiner, sieber2018recovery}, and tools which allow visual inspection of bins \cite{Broeksema2017IcoVer, Laczny2017BusyBee}.
 Binning of contigs have played a central role in software development in the field, a review on the benchmarking of binning algorithms was done by \citeNP{yue2020evaluating}. 
 Beside contig-binning tools we can also distinguish read-binning tools and co-abundant-gene-binning tools.
 The main purpose of read-binning tools is to pre-process reads into clusters for a posterior targeted assembly.
@@ -155,7 +155,7 @@ A number of aspects should be considered when performing binning analysis on met
 A list of binning algorithms, including some that we have not mentioned above, are listed here \autoref{Tbinningsoftware}.
 Computational resources available, sequencing technology, number of samples, and the sample's source are important factors to consider.
 Some tools employ more resources than others, and some perform better under specific circumstances (as reviewed by \citeNP{yue2020evaluating}).
-If you are dealing with a large number of samples, a gene-binning strategy could be taken into consideration.
+If you are dealing with a large number of samples, a tool like MetaBMF \cite{Xing2017MetaGen, Ma2019MetaBMF} or a gene-binning strategy could be taken into consideration.
 Tools such as CoMet were built around single sample binning \cite{herath2017comet}.
 Long read sequence technology is gaining momentum and some tools also integrate the characteristic features generated with this technology.
 The environment under study also play an important role for binning.
