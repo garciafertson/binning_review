@@ -26,7 +26,7 @@
 \linenumbers
 
 \title{Advances in Metagenomic Binning for the Reconstruction of Microbial Species}
-\author[1*]{Jose Fernando Garcia Guevara}
+\author[1*]{Fernando Garcia-Guevara}
 \author[1*]{Theo Portlock}
 \author[1,2]{Adil Mardinoglu}
 \author[1]{Mathias Uhlén}
@@ -83,7 +83,7 @@ Binning of contigs have played a central role in software development in the fie
 Beside contig-binning tools we can also distinguish read-binning tools and co-abundant-gene-binning tools.
 The main purpose of read-binning tools is to pre-process reads into clusters for a posterior targeted assembly.
 Here we find reference-free and non-reference-free tools, and tools designed for short-read or long-read sequencing technologies.
-Among the binning tools developed in recent years, a subset of them are dedicated to cluster reads (read-binning) (MetaBBC-LR, BioBloom Tools, CLAME, LVQ-KNN, Meta VW, HirBin, MEGAN-LR) \cite{wickramarachchi2020metabcc, chu2014biobloom, benavides2018clame, belka2018lvq, vervier2016large, osterlund2017hirbin, huson2018megan}.
+Among the binning tools developed in recent years, a subset of them are dedicated to cluster reads (read-binning) (MetaBBC-LR, BioBloom Tools, CLAME, LVQ-KNN, Meta VW, MEGAN-LR) \cite{wickramarachchi2020metabcc, chu2014biobloom, benavides2018clame, belka2018lvq, vervier2016large, huson2018megan}.
 
 \subsubsection{Binning co-abundant genes}
 Binning of co-abundant genes represents an alternative proposal to reconstruct species/biological entities from a set of metagenomic samples.
@@ -119,7 +119,7 @@ Most binning algorithms are designed for prokariotic organisms leaving viruses o
 In recent years the virome and its importance in health and disease has recognised.
 CoCoNet uses deep leaning to model co-ocurrence of contigs from the same viral genome.
 The network was optimized for diverse viral metagenomes, the network learns to model coverage variability within samples, a critical feature in viral metagenomes where DNA amplification methods are needed to increase input genetic material.
-VirBin clusters contigs for genome reconstruction of viral strains, different strains within viral species may show different biological properties such as transmissibility or virulence. Composition based features are usually are not enough to separate haplotypes, VirBin receives contigs as inputs and outputs the estimated number of haplotypes via contig aligment and returns the contigs for each haplotype based on relative abundance distribution, when the contigs are long enough VirBin produce better results.
+VirBin clusters contigs for genome reconstruction of viral strains, different strains within viral species may show different biological properties such as transmissibility or virulence. Composition based features are usually are not enough to separate haplotypes, VirBin receives contigs as inputs and outputs the estimated number of haplotypes via contig aligment and returns the contigs for each haplotype based on relative abundance distribution, when the contigs are long enough VirBin produce better results \cite{Chen2019virbin}.
 Newer strategies has been proposed and employed to reconstruct viral genomes from metagenomic samples, in a recent work \cite{nayfach2021metagenomic} a new compendium of 189680 DNA viruses from the human gut microbiome was produced.
 In this work they use viral informative features including presence of viral protein families \cite{paez2016uncovering}, absence of non-viral families \cite{el2019pfam}, gene strand switch rate \cite{roux2005combined}, and the score produced from the VirFinder \cite{ren2017virfinder} software.
 
@@ -127,7 +127,7 @@ In this work they use viral informative features including presence of viral pro
 Other advances in binning can be found in the integration of existing tools and software into bioinformatic pipelines.
 These innovations allow the automatic complete processing of read samples into bins or the addition of extra processing steps to address specific biological questions or problems related to the sample of origin.
 MetaWRAP is a modular pipeline ready to perform common tasks in metagenomic analysis, starting from read quality checks up to bin creation, refinement, reassembly quantification, taxonomic annotation and functional annotation.
-MAGO pipeline integrates metagenome assembly, binning, bin improvement, bin quality check, bin functional annotation, and bin taxonomic annotation. 
+MAGO pipeline integrates metagenome assembly, binning, bin improvement, bin quality check, bin functional annotation, and bin taxonomic annotation \cite{murovec2019mago}. 
 SqueezeMeta also integrates external software to perform the complete analysis of metagenomic samples from sequences reading to \gls{MAG} construction and annotation \cite{tamames2019squeezemeta}
 nf-mag supports both short and long reads, performs quality and adapter trimming, quality check,  performs assembly, binning, checks bin quality and assigns taxonomy \cite{ewels2020nf}.
 Autometa was developed to deal with non-model Eukariotic host contamination and complex single metagenomes, the application integrate sequence homology, nucleotide composition, coverage and single-copy marker genes to separate microbial genomes from non model host genomes \cite{miller2019autometa}. 

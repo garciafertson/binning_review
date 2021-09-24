@@ -1,34 +1,34 @@
 Software/Algorithm	Year	Description/purpose	Comment/Highlight	Doi
-CoCoNet	2021	Deep learning tool for Viral Metagenome Binning	Reconstuction of viral genomes	10.1093/bioinformatics/btab213
-Binnacle	2021	Using scaffolds to improve Metagenomic bin quality	Incorporates scaffold information	10.3389/fmicb.2021.638561
-VAMB	2021	Metagenome binning using deep variational autoencoders	Autoencoder algorithm, fast processing 	10.1038/s41587-020-00777-4
-phyloFlash	2020	ssrRNA profiling and MAG assembly	Incorporates ssrRNA profiling information into MAG assembly	10.1128/mSystems.00920-20
-MetaBCC-LR	2020	Metagenomic binning for Long-Reads	Suitable for long reads sequencing technology	10.1093/bioinformatics/btaa441
-BioBloom Tools	2020	Binning of reads for alignment free targeted assembly	Data preparation for targeted assembly using space seeds	10.1073/pnas.1903436117
-GraphBin	2020	Refined binning of metagenomic contigs using assembly graphs	Incorporates assembly graph information	10.1093/bioinformatics/btaa180
-MetaCon	2019	Unsupervised binning k-mers and coverage focussing on contigs of different lenghts	Focusses different contig lengths	10.1186/s12859-019-2904-4
-VirBin	2019	Binning viral haplotypes from assembled contigs	Viral haplotypes MAGs	10.1186/s12859-019-3138-1
-MAGO	2019	Framework for Production and analysis of MAGs	Integrated pipeline	10.1093/molbev/msz237
-SeqDex	2019	Genome separation of Endosymbionts from mixed sequencing samples	Identification of endosymbiont	10.3389/fgene.2019.00853
-SqueezeMeta	2019	Pipeline covering the complete metagenomic/metatranscriptomic analysis	Internal checks that provides information about consistency of contigs and bins	10.3389/fmicb.2018.03349
-MetaTOR	2019	High quality MAG binning from mammalian guts using meta3C libraries	Incorporates 3D contact information	10.3389/fgene.2019.00753
-MetaBAT (v2)	2019	Adatptative binning algorithm for genome reconstruction from metagenome assemblies	Eliminates manual parameter tuning from previous version	10.7717/peerj.7359
-MetaBMF	2019	Scalable binning algorithm for species and strain level large scale metagenomic studies	Applicable to large scale studies	10.1093/bioinformatics/btz577
-SolidBin	2019	Improving metagenome binning with semi-supervised normalized cut	Improved clustering performance	10.1093/bioinformatics/btz253
-Autometa	2019	Extraction of microbial genomes from individual shotgun metagenomes	Handles eukaryotic contamination	10.1093/nar/gkz148
-CLAME	2018	Aligment based algorithm allowed description of novel species	Aligment based read binning	10.1186/s12864-018-5191-y
-LVQ-KNN	2018	Composition based RNA or DNA binning of short sequences	Classification into DNA or RNA sequence	10.1016/j.virusres.2018.10.002
-MSPminer	2018	Abundance based reconstitution of microbial pan-genomes from metagenomic data	Pan genome reconstitution	10.1093/bioinformatics/bty830
-MetaWRAP	2018	Flexible pipeline for genome resolved metagenomic data analysis	Hybrid bin extraction algorithm	10.1186/s40168-018-0541-1
-Meta VW	2018	Large scale Machine Learning Sequence classification	Machine learning for reads based on Kmer profile	10.1007/978-1-4939-8561-6_2
-BMC3C	2018	Binning contigs using codon usage sequence composition and read coverage	Adds codon usage information	10.1093/bioinformatics/bty519
-DAS Tool	2018	Dereplication aggregation and scoring strategy	Combines several binning algorithm results	10.1038/s41564-018-0171-1
-MEGAN-LR	2018	Long read/contig taxonomic binning 	Aligment of long reads against reference sequences	10.1186/s13062-018-0208-7
-CoMet	2018	Binning workflow using coverage and composition	Single sample, includes GC content and 4-mer frequency	10.1186/s12859-017-1967-3
-MetaGen	2017	Reference-free learning with multiple metagenomic samples	Requires multiple samples	10.1186/s13059-017-1323-y
-BusyBee Web	2017	Bootstrapped supervised binning and annotation	Supervised binning	10.1093/nar/gkx348
-ICoVer	2017	Interactive visualisation tool for verification and refinement of metagenomic bins	Interactive visualisation tool	10.1186/s12859-017-1653-5
-BinSanity	2017	Unsupervised clustering using coverage and affinity propagation	Reduce bias for high/low abundance 	10.7717/peerj.3035
-Binning refiner	2017	Improved genome bins through the combination of different binning algorithms	Combination of different binning algorithms	10.1093/bioinformatics/btx086
-COCACOLA	2016	Binning contigs using composition, read coverage, co-aligment and paired end read linkage	Adds paired end read and coaligment information	10.1093/bioinformatics/btw290
-GroopM (v2:2017)	2014 	Tool for automatic recovery of population genomes from related metagenomes	Adds differential coverage to complement composition based binning	10.7717/peerj.603
+CoCoNet \cite{arisdakessian2021coconet}	2021	Deep learning tool for Viral Metagenome Binning	Reconstuction of viral genomes	10.1093/bioinformatics/btab213
+Binnacle \cite{Muralidharah2021binnacle}	2021	Using scaffolds to improve Metagenomic bin quality	Incorporates scaffold information	10.3389/fmicb.2021.638561
+VAMB \cite{nissenimproved}	2021	Metagenome binning using deep variational autoencoders	Autoencoder algorithm, fast processing 	10.1038/s41587-020-00777-4
+phyloFlashi \cite{Harald2020phyloflash}	2020	ssrRNA profiling and MAG assembly	Incorporates ssrRNA profiling information into MAG assembly	10.1128/mSystems.00920-20
+MetaBCC-LR \cite{wickramarachchi2020metabcc}	2020	Metagenomic binning for Long-Reads	Suitable for long reads sequencing technology	10.1093/bioinformatics/btaa441
+BioBloom \cite{ToolsChu2020bloom}	2020	Binning of reads for alignment free targeted assembly	Data preparation for targeted assembly using space seeds	10.1073/pnas.1903436117
+GraphBin \cite{mallawaarachchi2020graphbin}	2020	Refined binning of metagenomic contigs using assembly graphs	Incorporates assembly graph information	10.1093/bioinformatics/btaa180
+MetaCon \cite{Qian2019metacon}	2019	Unsupervised binning k-mers and coverage focussing on contigs of different lenghts	Focusses different contig lengths	10.1186/s12859-019-2904-4
+VirBin \cite{Chen2019virbin}	2019	Binning viral haplotypes from assembled contigs	Viral haplotypes MAGs	10.1186/s12859-019-3138-1
+MAGO \cite{murovec2019mago}	2019	Framework for Production and analysis of MAGs	Integrated pipeline	10.1093/molbev/msz237
+SeqDex \cite{chiodi2019seqdechi}	2019	Genome separation of Endosymbionts from mixed sequencing samples	Identification of endosymbiont	10.3389/fgene.2019.00853
+SqueezeMeta \cite{tamames2019squeezemeta}	2019	Pipeline covering the complete metagenomic/metatranscriptomic analysis	Internal checks that provides information about consistency of contigs and bins	10.3389/fmicb.2018.03349
+MetaTOR \cite{Baudry2019Metator}	2019	High quality MAG binning from mammalian guts using meta3C libraries	Incorporates 3D contact information	10.3389/fgene.2019.00753
+MetaBAT (v2) \cite{Kang2019metabat2}	2019	Adatptative binning algorithm for genome reconstruction from metagenome assemblies	Eliminates manual parameter tuning from previous version	10.7717/peerj.7359
+MetaBMF \cite{Ma2019MetaBMF}	2019	Scalable binning algorithm for species and strain level large scale metagenomic studies	Applicable to large scale studies	10.1093/bioinformatics/btz577
+SolidBin \cite{wang2019SolidBin}	2019	Improving metagenome binning with semi-supervised normalized cut	Improved clustering performance	10.1093/bioinformatics/btz253
+Autometa \cite{miller2019autometa}	2019	Extraction of microbial genomes from individual shotgun metagenomes	Handles eukaryotic contamination	10.1093/nar/gkz148
+CLAME \cite{benavides2018clame}	2018	Aligment based algorithm allowed description of novel species	Aligment based read binning	10.1186/s12864-018-5191-y
+LVQ-KNN \cite{belka2018lv}	2018	Composition based RNA or DNA binning of short sequences	Classification into DNA or RNA sequence	10.1016/j.virusres.2018.10.002
+MSPminer \cite{plaza2019mspminer}	2018	Abundance based reconstitution of microbial pan-genomes from metagenomic data	Pan genome reconstitution	10.1093/bioinformatics/bty830
+MetaWRAP \cite{Uritskiy2018metawrap}	2018	Flexible pipeline for genome resolved metagenomic data analysis	Hybrid bin extraction algorithm	10.1186/s40168-018-0541-1
+Meta VW \cite{vervier2016large}	2018	Large scale Machine Learning Sequence classification	Machine learning for reads based on Kmer profile	10.1007/978-1-4939-8561-6_2
+BMC3C \cite{Yu2018BMC3C}	2018	Binning contigs using codon usage sequence composition and read coverage	Adds codon usage information	10.1093/bioinformatics/bty519
+DAS Tool \cite{sieber2018recovery}	2018	Dereplication aggregation and scoring strategy	Combines several binning algorithm results	10.1038/s41564-018-0171-1
+MEGAN-LR \cite{huson2018megan}	2018	Long read/contig taxonomic binning 	Aligment of long reads against reference sequences	10.1186/s13062-018-0208-7
+CoMet \cite{herath2017comet}	2018	Binning workflow using coverage and composition	Single sample, includes GC content and 4-mer frequency	10.1186/s12859-017-1967-3
+MetaGen \cite{Xing2017MetaGen}	2017	Reference-free learning with multiple metagenomic samples	Requires multiple samples	10.1186/s13059-017-1323-y
+BusyBee Web \cite{Laczny2017BusyBee}	2017	Bootstrapped supervised binning and annotation	Supervised binning	10.1093/nar/gkx348
+ICoVer \cite{Broeksema2017IcoVer}	2017	Interactive visualisation tool for verification and refinement of metagenomic bins	Interactive visualisation tool	10.1186/s12859-017-1653-5
+BinSanity \cite{Graham2017Binsanity}	2017	Unsupervised clustering using coverage and affinity propagation	Reduce bias for high/low abundance 	10.7717/peerj.3035
+Binning refiner \cite{Song2017Binningrefiner}	2017	Improved genome bins through the combination of different binning algorithms	Combination of different binning algorithms	10.1093/bioinformatics/btx086
+COCACOLA \cite{Lu2016COCACOLA}	2016	Binning contigs using composition, read coverage, co-aligment and paired end read linkage	Adds paired end read and coaligment information	10.1093/bioinformatics/btw290
+GroopM (v2:2017) \cite{Imelfort2014GroopM}	2014 	Tool for automatic recovery of population genomes from related metagenomes	Adds differential coverage to complement composition based binning	10.7717/peerj.603

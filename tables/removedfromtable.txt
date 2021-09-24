@@ -7,8 +7,7 @@ removed
 MLBP MrGBP (Algorithm)  2019    Signal processing method for alignment free metagenomic binning Alternative description of sequences designed for noisy data    10.1038/s41598-018-38197-9      30770850oiiiiii
 3D BH SNE (Algorithm)   2018    Fuzzy binning of metagenomic sequence fragments Horizontal gene transfer and regions of uncertain assigment     10.1109/EMBC.2018.8512529       30440633
 Opal (algorithm*)       2018    Metagenomic binning through low density binning Improvement at higher taxonomic levels, discovery of new lineages       10.1093/bioinformatics/bty611   30010790
-d2sBin add onn  2017    Improved formula for calculate oligonucleotide sequence dissimilaritu   Math formula to calculate oligo sequence dissimilarity  10.1186/s12859-017-1835-1       28931373
-
-IFCM add on     2016    Improved binning using Fuzzy C-Means Method     Add estimated distribution of real genome lengths       10.1109/TCBB.2016.2576452       27295684
+#d2sBin add onn  2017    Improved formula for calculate oligonucleotide sequence dissimilaritu   Math formula to calculate oligo sequence dissimilarity  10.1186/s12859-017-1835-1       28931373
+#IFCM add on     2016    Improved binning using Fuzzy C-Means Method     Add estimated distribution of real genome lengths       10.1109/TCBB.2016.2576452       27295684
 
 
