@@ -1,11 +1,12 @@
 \documentclass{article}
 \usepackage[hidelinks]{hyperref}
+\usepackage[table]{xcolor}
 \usepackage{apacite}
 \usepackage{authblk}
 \usepackage{graphicx}
 \usepackage{a4wide}
 \usepackage{booktabs}
-\usepackage{rotating}
+%\usepackage{rotating}
 \usepackage[nonumberlist]{glossaries}
 
 \bibliographystyle{apacite}
@@ -31,7 +32,7 @@
 \author[1]{Mathias Uhlén}
 \author[1,2]{Saeed Shoaie}
 \affil[1]{Science for Life Laboratory, Royal Institute of Technology (KTH), Stockholm, Sweden.}
-\affil[2]{Centre for HostMicrobiome Interactions, Faculty of Dentistry, Oral \& Craniofacial Sciences, King’s College London, London, UK. }
+\affil[2]{Centre for Host Microbiome Interactions, Faculty of Dentistry, Oral \& Craniofacial Sciences, King’s College London, London, UK. }
 
 \date{}
 \makeglossaries
@@ -53,7 +54,7 @@ This review details the current advances in the field of metagenomic binning.
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.27]{figures/figure_binning_software.001.pdf}
+\includegraphics[scale=0.265]{figures/v003.pdf}
 \caption["Overview of the existing binning strategies."]{
 	Overview of the existing binning strategies. a) Microbiome samples are collected and sequenced, the resulting sequences are processed, employing the existing binning strategies, which try to reconstruct the genome sequences from the original organisms. b) The scheme present a simplified workflow of the existing binning strategies, named contig-binning, reads-binning and genes-binning, represented as rounded rectangles in the middle of arrows. The star in the upper left indicates the entry point, simple arrows represent intermediate processing steps, black edge squares represent intermediate files, the color squares represent endpoint files. The binning strategies are not independent and can complement each other as shown by the dotted arrows.}
 \label{Fsummary}
@@ -75,7 +76,7 @@ Here we will briefly recapitulate recent binning algorithms and highlight some o
 A metagenomic sample is comprised of many organisms and the goal of binning is to reconstruct the sequences from each organism present in the original sample.
 The majority of binning tools are oriented toward clustering contigs (contig-binning) into bins, which may represent the genome from a single biological entity/organism.
 A \gls{MAG} is a single-taxon assembly based on one or more binned metagenomes that has been asserted to be a close representation to an individual genome that could match an already existing isolate or represent a novel isolate.
-Current contig-binning tools are commonly reference free (i.e. they do not depend on reference sequences to perform clustering) and rely on coverage information and sequence composition.
+Current contig-binning tools are commonly reference free (i.e. they do not depend on reference sequences to perform clustering) and rely on coverage information and sequence composition (listed in \autoref{Tbinningsoftware}).
 Progress in contig-binning algorithms can be seen in the proposals to integrate new sources of information (for example, from scaffold-graphs (Binnacle \cite{Muralidharah2021binnacle}), paired-end reads (COCACOLA) \cite{Lu2016COCACOLA}, or 3D contact information (MetaTOR) \cite{Baudry2019Metator}) and state of the art algorithms in machine learning (CoCoNet, VAMB) \cite{nissenimproved, arisdakessian2021coconet}.
 We also notice the development of Bin refinement tools (DAS-tool, Binning Refiner) that rely on the outputs from multiple contig-binning algorithms and combine them to produce better results \cite{Song2017Binningrefiner, sieber2018recovery}, and tools which allow visual inspection of bins \cite{Broeksema2017IcoVer, Laczny2017BusyBee}.
 Binning of contigs have played a central role in software development in the field, a review on the benchmarking of binning algorithms was done by \citeNP{yue2020evaluating}. 
@@ -136,15 +137,22 @@ This tool combines partial taxonomic annotations obtained trough homology search
 Reproducibility, scalability, and ease of use from people with little computational experience are attractive features that pipelines for metagenomic analysis provide.
 
 \section{Challenges in appropriate binning algorithm selection}
-\begin{sidewaystable}
+%\begin{sidewaystable}
+\begin{table}
+\rowcolors{2}{gray!10}{white}
+%\setlength{\extrarowheight}{2pt}
+\renewcommand{\arraystretch}{1.6}
 \begin{tiny}
 \centering
 \caption[Comparison of popular binning algorithms updated since 2017]{Comparison of popular binning algorithms updated since 2017.}
 	\include{tables/Table1_binning_software_since2017.tsv.tex}
 \label{Tbinningsoftware}
 \end{tiny}
-\end{sidewaystable}
+\end{table}
+%\end{sidewaystable}
+
 A number of aspects should be considered when performing binning analysis on metagenomic samples.
+A list of binning algorithms, including some that we have not mentioned above, are listed here \autoref{Tbinningsoftware}.
 Computational resources available, sequencing technology, number of samples, and the sample's source are important factors to consider.
 Some tools employ more resources than others, and some perform better under specific circumstances (as reviewed by \citeNP{yue2020evaluating}).
 If you are dealing with a large number of samples, a tool like MetaBMF \cite{Xing2017MetaGen, Ma2019MetaBMF} or a gene-binning strategy could be taken into consideration.
