@@ -8,12 +8,12 @@ BioBloom Tools	2020	Reads binning for targeted assembly, alignment free	Data pre
 GraphBin	2020	Refined binning of metagenomic contigs using assembly graphs	Incorporates assembly graphs information	10.1093/bioinformatics/btaa180	32167528
 MetaCon	2019	Unsupervised binning k-mers and coverage, focus on contigs of different lenghts	Focus different lengths contigs	10.1186/s12859-019-2904-4	31757198
 VirBin	2019	Binning viral haplotypes from assembled contigs	Viral haplotypes MAGs	10.1186/s12859-019-3138-1	31684876
-MAGO	2019	Framework for Production and analysis of MAGs   pipeline        10.1093/molbev/msz237   31633780
+MAGO	2019	Framework for Production and analysis of MAGs   pipeline	10.1093/molbev/msz237	31633780
 SeqDex	2019	Genome separation of Endosymbionts from mixed sequencing samples	Identification of endosymbiont	10.3389/fgene.2019.00853	31608107
 SqueezeMeta	2019	Pipeline covering the complete analysis in metagenomic/transcriptomic analysis	Internal checks provide information about consistency of contigs and bins	10.3389/fmicb.2018.03349	30733714
 MetaTOR	2019	High quality MAGs from mammalian guts using meta3C libraries	Incorporates 3D contact information	10.3389/fgene.2019.00753	31481973
 MetaBAT (v2)	2019	Adatptative binning algorithm for genome reconstruction from metagenome assemblies	Eliminates manual parameter tuning from previous version	10.7717/peerj.7359	31388474
-MetaBMF	2019	Scalable binning algorithm for large scale metagenomic studies, for species and strain level	Employs sample X contigs cf mapped read counts	10.1093/bioinformatics/btz577	31347687
+MetaBMF	2019	Scalable binning algorithm for large scale metagenomic studies, for species and strain level	Applicable to large-scale studies	10.1093/bioinformatics/btz577	31347687
 PolyCRACKER	2019	Method for partitioning polyploid sub genomes by signatures of repetitive DNA evolution	Haplotypes for polyploid genomes	10.1186/s12864-019-5828-5	31299888
 SolidBin	2019	Improving metagenome binning with semi-supervised normalized cut		10.1093/bioinformatics/btz253	30977806
 Autometa	2019	extraction of microbial genomes from individual shotgun metagenomes.	Handles eukaryotic contamination	10.1093/nar/gkz148	30838416
